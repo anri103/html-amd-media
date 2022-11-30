@@ -1,0 +1,173 @@
+(function ($) {
+    'use strict';
+
+})(jQuery);
+
+// MOBILE MENU
+
+const toggleMobileMenu = () => document.body.classList.toggle('offcanvas-menu');
+
+// MODAL
+
+const toggleModal = () => document.body.classList.toggle('open-main-modal');
+
+// Smooth Scroll JS
+
+const makeNavLinksSmooth = () => {
+    const navLinks = document.querySelectorAll('.smooth-link');
+
+    for (let n in navLinks) {
+        if (navLinks.hasOwnProperty(n)) {
+            navLinks[n].addEventListener('click', e => {
+                e.preventDefault();
+                document.querySelector(navLinks[n].hash)
+                    .scrollIntoView({
+                        behavior: "smooth"
+                    });
+            });
+        }
+    }
+}
+makeNavLinksSmooth();
+
+const spyScrolling = () => {
+    const sections = document.querySelectorAll('.section-spy');
+
+    window.onscroll = () => {
+        const scrollPos = document.documentElement.scrollTop || document.body.scrollTop;
+
+        for (let s in sections)
+            if (sections.hasOwnProperty(s) && sections[s].offsetTop <= scrollPos) {
+                const id = sections[s].id;
+                document.querySelector('.sidebar-nav .active').classList.remove('active');
+                document.querySelector(`a[href*=${id}]`).parentNode.classList.add('active');
+            }
+    }
+}
+spyScrolling();
+
+// Слайдер на странице index.html
+
+const activitySwiper = new Swiper('.activitySwiper', {
+    slidesPerView: 'auto',
+    spaceBetween: 30,
+    freeMode: true,
+    mousewheel: true,
+    scrollbar: {
+        el: '.swiper-scrollbar',
+        hide: true,
+    },
+});
+
+// Слайдер на странице index.html
+
+const testimonialSwiper = new Swiper('.testimonialSwiper', {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        dynamicBullets: true,
+        clickable: true,
+    },
+});
+
+// Слайдер на странице project-item.html
+
+const projectSwiper = new Swiper('.projectSwiper', {
+    slidesPerView: 'auto',
+    spaceBetween: 30,
+    freeMode: true,
+    mousewheel: true,
+    scrollbar: {
+        el: '.swiper-scrollbar',
+        hide: true,
+    },
+});
+
+// Слайдер на странице project-item.html
+
+const worksSwiper = new Swiper('.worksSwiper', {
+    slidesPerView: 3,
+    spaceBetween: 10,
+    centeredSlides: true,
+    loop: true,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+        pauseOnMouseEnter: true,
+    },
+    breakpoints: {
+        992: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+        },
+        1200: {
+            slidesPerView: 4,
+            spaceBetween: 30,
+        },
+        1500: {
+            slidesPerView: 6,
+            spaceBetween: 30,
+        },
+    },
+});
+
+// Слайдер на странице company.html
+
+const companyGallerySwiper = new Swiper('.companyGallerySwiper', {
+    slidesPerView: 'auto',
+    spaceBetween: 20,
+    freeMode: true,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        dynamicBullets: true,
+        clickable: true,
+    },
+});
+
+
+// Попап видео на index.html
+
+const lightboxMainVideo = GLightbox({
+    selector: '.main-video-glightbox1'
+});
+
+// Попап видеоотзывов
+
+const lightboxTestimonial = GLightbox({
+    selector: '.testimonial-glightbox1'
+});
+
+// Попап галереи на project-item.html
+
+const lightboxProjectItem = GLightbox({
+    selector: '.project-item-glightbox1'
+});
+
+// Попап галереи на company.html
+
+const lightboxCompany = GLightbox({
+    selector: '.glightbox1'
+});
+
+// Попап изображений на blog-item.html
+
+const lightboxBlogItem = GLightbox({
+    selector: '.blog-item-glightbox1'
+});
+
+
+// PHONE MASK
+
+// const phoneMask = IMask(
+//     document.getElementById('InputPhone1'), {
+//     mask: '+{7}(000)000-00-00'
+// });

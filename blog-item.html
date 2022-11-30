@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMD blog-item HTML</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/glightbox.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- Мобильное меню -->
+    <div class="menu-background-overlay" onclick="toggleMobileMenu()"></div>
+    <div class="site-mobile-menu">
+        <div class="site-mobile-menu-header">
+            <button class="btn-close" type="button" onclick="toggleMobileMenu()"></button>
+        </div>
+        <div class="site-mobile-menu-body">
+            <div class="py-3">
+                <ul class="site-nav-wrap">
+                    <li class="nav-item">
+                        <a href="projects.html" class="nav-link">Проекты</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="uslugi.html" class="nav-link">Услуги</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="company.html" class="nav-link">Компания</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="blog.html" class="nav-link">Журнал</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contacts.html" class="nav-link">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="py-3">
+                <button type="button" class="btn btn-primary" onclick="toggleModal()">Связаться</button>
+            </div>
+            <div class="py-3">
+                <ul class="list-inline mb-0">
+                    <li><a class="hover-opacity" href="#"><img src="img/icon-vk.svg" alt=""></a></li>
+                    <li><a class="hover-opacity" href="#"><img src="img/icon-telegram.svg" alt=""></a></li>
+                    <li><a class="hover-opacity" href="#"><img src="img/icon-wa.svg" alt=""></a></li>
+                </ul>
+            </div>
+            <div class="py-3">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">+7 (495) 159-59-01</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">support@amdmedia.ru</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Основное меню сверху -->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+
+                <a class="logo hover-opacity" href="index.html">
+                    <img src="img/logo-black.svg" alt="">
+                </a>
+
+                <button class="btn navbar-toggler d-inline-block d-lg-none" type="button" onclick="toggleMobileMenu()">Меню</button>
+
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item"><a class="nav-link" href="projects.html">Проекты</a></li>
+                        <li class="nav-item"><a class="nav-link" href="uslugi.html">Услуги</a></li>
+                        <li class="nav-item"><a class="nav-link" href="company.html">Компания</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="blog.html">Журнал</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
+                    </ul>                    
+                </div>
+
+                <div class="d-none d-lg-flex align-items-center">
+                    <div class="mx-2 mx-xl-5">
+                        <button type="button" class="btn btn-primary" onclick="toggleModal()">Связаться</button>
+                    </div>
+                    <div class="d-none d-xl-block py-2">
+                        <a class="fw-600 color-black color-red-hover" href="#">+7 (495) 159-59-01</a>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+
+        <!-- Ссылка назад -->
+        <section class="section section-back-link">
+            <div class="container">
+                <a class="back-link color-black color-red-hover d-inline-flex align-items-center" href="#">
+                    <img class="flex-shrink-0 me-2" src="img/arrow-up-right.svg" alt="">
+                    <span>Назад</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Секция с сайдбаром -->
+        <section class="section py-xl">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-lg-7">
+                        <div class="main-content">
+                            <!-- Заголовок -->
+                            <div class="pb-50">
+                                <h1>E-commerce решения</h1>
+                            </div>
+                            <div class="pb-50">
+                                <img src="img/blog-item.jpg" alt="">
+                            </div>
+                            <h2 class="section-spy pt-3" id="title-01">Для чего нужны E-commerce ресурсы?</h2>
+                            <p>E-commerce — электронная торговля, все интернет-площадки и сервисы с онлайн-оплатой, интернет-магазины, где принимаются электронные платежи за товары и услуги.</p>
+                            <p>Мы помогаем предпринимателям из СНГ продавать физические и digital-товары онлайн. Если у вас уже есть коммерческая интернет-площадка, мы окажем профессиональную помощь по её расширению и увеличению результативности вашего проекта.</p>
+                            <p>Для онлайн-магазинов одежды, продуктов, предметов быта, маркетплейсов, b2b-сервисов, площадок и платформ для продажи бизнес-услуг и приложений, курьерских служб, интернет-маркетинга и многого другого.</p>
+                            <p>Если вы думаете открыть свой торговый бизнес в интернете, следует заранее продумать все настройки и элементы его функционала.</p>
+                            <h2 class="section-spy pt-3" id="title-02">Самые распространённые тренды среди E-commerce разработок:</h2>
+                            <ul>
+                                <li>Продажа через социальные сети: можно переходить на страницы товара через TikTok, Pinterest, YouTube и т.п.;</li>
+                                <li>Принятие цифровизации даже в офлайн-сферах бизнеса, например, застройки, автодилерство.</li>
+                                <li>b2b e-commerce сегодня значительно превышает обороты b2c.</li>
+                                <li>Мобильные приложения и сервисы стремительно вытесняют все прочие каналы продаж в Интернете: голосовые помощники, AR-приложения для примерок, оплата при помощи PayPass.</li>
+                                <li>Входят в моду гибридные форматы: к примеру, знаменитые онлайн-супермаркеты, переходя в онлайн-продажи, организовывают крупные зоны для самовывоза или оформления покупок онлайн.</li>
+                            </ul>
+                            <div class="py-5">
+                                <a href="img/blog-item-01.jpg" class="blog-item-glightbox1">
+                                    <img src="img/blog-item-01.jpg" alt="">
+                                </a>
+                            </div>
+                            <h2 class="section-spy pt-3" id="title-03">Преимущества современной E-commerce разработки:</h2>
+                            <ul>
+                                <li>Упрощение множества процессов и снижение количества трат;</li>
+                                <li>Уменьшение числа посредников;</li>
+                                <li>Динамичный рост онлайн-торговли;</li>
+                                <li>Возможности большего охвата целевой аудитории;</li>
+                                <li>Наглядная аналитика и трекинг.</li>
+                            </ul>
+                            <p>Сегодня системы электронной коммерции существенно упрощают процесс покупки: нужно всего лишь оплатить покупку любым онлайн-способом и ждать доставку курьером или почтой. Это гораздо проще и быстрее, чем обычный поход в магазин.</p>
+                            <p>E-commerce — самый удобный способ совершения сделок купли-продажи в наше время. Интернет нельзя представить без ниши электронной коммерции, все привыкли к комфортному способу коммуникации. Если вы хотите идти в ногу со временем, вы всегда можете заказать E-commerce разработку для вашего проекта.</p>
+                            <div class="py-5">
+                                <a href="img/blog-item-01.jpg" class="blog-item-glightbox1">
+                                    <img src="img/blog-item-01.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 ms-auto">
+                        <div class="sticky-top">
+                            <div class="blog-sidebar">
+                                <div class="blog-sidebar-widget d-none d-lg-block">
+                                    <p class="fz-28">Содержание статьи</p>
+                                    <div class="nav flex-column sidebar-nav">
+                                        <li class="nav-item active">
+                                            <a href="#title-01" class="nav-link smooth-link">Для чего нужны E-commerce ресурсы?</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#title-02" class="nav-link smooth-link">Самые распространённые тренды среди E-commerce разработок</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#title-03" class="nav-link smooth-link">Преимущества современной E-commerce разработки</a>
+                                        </li>
+                                    </div>
+                                </div>
+                                <div class="blog-sidebar-widget">
+                                    <div class="blog-item__meta">
+                                        <a href="blog.html">Название тега</a>
+                                        <a href="blog.html">Название тега</a>
+                                        <a href="blog.html">Название тега</a>
+                                        <a href="blog.html">Название тега</a>
+                                    </div>
+                                </div>
+                                <div class="blog-sidebar-widget">
+                                    <p class="fz-28">Подписка на рассылку</p>
+                                    <form class="subscribe-form" action="#" method="post">
+                                        <input type="email" class="form-control" placeholder="Ваш e-mail">
+                                        <button type="submit" class="btn btn-primary w-100">Отправить</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Смотрите также -->
+        <section class="section py-xl">
+            <div class="container">
+                <div class="d-flex justify-content-between pb-50">
+                    <h2 class="m-0">Смотрите также</h2>
+                    <a class="fz-22 text-uppercase" href="projects.html">Все проекты</a>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="card project-item h-100">
+                            <div class="pojects__item overlay-item">
+                                <a class="d-block w-100" href="project-item.html">
+                                    <img class="w-100" src="img/projects/003.jpg" alt="">
+                                </a>
+                                <div class="overlay-layer">
+                                    <a class="hover-rotate" href="project-item.html">
+                                        <img src="img/watch.svg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="project-item__body">
+                                <p><a class="color-black color-red-hover" href="project-item.html">Хлеб и хлебобулочные изделия Грей-Холдинг</a></p>
+                                <p class="h2">Разработка дизайна, верстка и программирование сайта на современном движке WordPress</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card project-item h-100">
+                            <div class="pojects__item overlay-item">
+                                <a class="d-block w-100" href="project-item.html">
+                                    <img class="w-100" src="img/projects/002.jpg" alt="">
+                                </a>
+                                <div class="overlay-layer">
+                                    <a class="hover-rotate" href="project-item.html">
+                                        <img src="img/watch.svg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="project-item__body">
+                                <p><a class="color-black color-red-hover" href="project-item.html">Иммерсивные квесты InQuest</a></p>
+                                <p class="h2">Разработка дизайн для сайта, верстка кодом и посадка программировние на WordPres</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col">
+                    <div class="footer__wiget">
+                        <p class="h3">Услуги</p>
+                        <ul class="nav flex-column">
+                            <li class="nav-item"><a class="nav-link" href="#">Сайты и сервисы</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Сопровождение и развитие</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Дизайн</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Мобильные приложения</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Аналитика</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">SERM / ORM</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Автоматизация</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="footer__wiget">
+                        <p class="h3">Направления</p>
+                        <ul class="nav flex-column">
+                            <li class="nav-item"><a class="nav-link" href="#">B2B - системы</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">UX/UI - дизайн</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">SEO-продвижение и контент
+                                    маргетинг</a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="#">CRM - системы</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Мобильные приложения </a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Сопровождение и развитие</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Разработка и внедрение корпоративных
+                                    порталов</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">E - COMMERCE решения</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="footer__wiget">
+                        <p class="h3">Проекты</p>
+                        <ul class="nav flex-column">
+                            <li class="nav-item"><a class="nav-link" href="#">E-commerce</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Mobile</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">B2B-порталы</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Битрикс24</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Корпоративные</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Сервисы</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="footer__wiget">
+                        <p class="h3">Агенство</p>
+                        <ul class="nav flex-column">
+                            <li class="nav-item"><a class="nav-link" href="#">О нас</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Команда</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Технологии</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Фото</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Отзывы</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Журнал</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="footer__contacts">
+                        <p class="h3">Контакты</p>
+                        <p><a class="color-black color-red-hover" href="#">+7 (495) 134-25-25</a></p>
+                        <p><a href="#">support@startsite.studio</a></p>
+                        <ul class="list-inline">
+                            <li><a class="hover-opacity" href="#"><img src="img/icon-vk.svg" alt=""></a></li>
+                            <li><a class="hover-opacity" href="#"><img src="img/icon-telegram.svg" alt=""></a></li>
+                            <li><a class="hover-opacity" href="#"><img src="img/icon-wa.svg" alt=""></a></li>
+                        </ul>
+                        <p><button type="button" class="btn btn-primary" onclick="toggleModal()">Связаться</button></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal-background-overlay" onclick="toggleModal()"></div>
+    <div class="modal-main">
+        <div class="modal-main__header p-4">
+            <button class="btn-close" type="button" onclick="toggleModal()"></button>
+        </div>
+        <div class="modal-main__body">
+            <div class="container">            
+                <div class="row g-4">
+                    <div class="col-lg-4">
+                        <div class="p-4">
+                            <p class="fz-32 fw-600">Напишите нам</p>
+                            <p class="fz-22">Кратко опишите свою задачу, и мы свяжемся с вами в кратчайшие сроки.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="p-4">
+                            <form action="#" method="post">
+                                <div class="mb-3">
+                                    <label class="form-label d-none">Имя</label>
+                                    <input type="text" class="form-control" placeholder="Имя">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label d-none">Телефон</label>
+                                    <input type="text" class="form-control" placeholder="Телефон">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label d-none">Email</label>
+                                    <input type="email" class="form-control" placeholder="Email">
+                                </div>
+                                <div class="mb-3">
+                                    <select class="form-select">
+                                        <option selected>Бюджет</option>
+                                        <option value="1">до 500 тыс. рублей</option>
+                                        <option value="2">до 1 млн рублей</option>
+                                        <option value="3">от 1 млн до 2 млн рублей</option>
+                                        <option value="3">более 5 млн рублей</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label d-none">Сообщение</label>
+                                    <textarea class="form-control" rows="3" placeholder="Сообщение"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary w-100">Отправить</button>
+                                <p class="fz-14 mt-3">Нажимая на кнопку, вы соглашаетесь с <a href="#privacyPolicy" data-bs-toggle="modal" data-bs-target="#privacyPolicy">Политикой персональных данных</a></p>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="p-4">
+                            <p class="fz-20 mb-5">Наш Email:<br>
+                                <a href="mailto:support@amdmedia.ru" class="fw-600">support@amdmedia.ru</a>
+                            </p>
+                            <p class="fz-20 fw-600 mb-5">Наш адрес:<br>
+                                117638 Россия, Москва,<br>
+                                Одесская улица, 2кС
+                            </p>
+                            <ul class="list-inline">
+                                <li><a class="hover-opacity" href="#"><img src="img/icon-vk.svg" alt=""></a></li>
+                                <li><a class="hover-opacity" href="#"><img src="img/icon-telegram.svg" alt=""></a></li>
+                                <li><a class="hover-opacity" href="#"><img src="img/icon-wa.svg" alt=""></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Politicy -->
+    <div class="modal fade" id="privacyPolicy" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p class="fs-2">Политика конфиденциальности</p>
+                <p>1. Принимая условия настоящего Соглашения, Пользователь даёт своё согласие Администрации сайта https://amdmedia.ru (далее — Администрация) на сбор, хранение и обработку своих персональных данных, указанных путём заполнения веб-форм на сайте https://amdmedia.ru (далее — Сайт). Под персональными данными понимается любая информация, относящаяся к прямо или косвенно определённому или определяемому физическому лицу (гражданину).</p>
+                <p>2. Пользователь также даёт своё согласие Администрации на отправку маркетинговых и информационных рассылок.</p>
+                <p>3. Основанием для обработки персональных данных являются: статья 24 Конституции РФ и статья 6 Федерального закона № 152-ФЗ «О персональных данных» с дополнениями и изменениями.</p>
+                <p>4. В ходе обработки с персональными данными будут совершены следующие операции: сбор, хранение, уточнение, передача, блокирование, удаление, уничтожение — все упомянутые действия только в целях, указанных в п. 2 настоящего Соглашения.</p>
+                <p>5. Администрация обязуется не передавать полученную от Пользователя информацию третьим лицам. Не считается нарушением предоставление персональных данных третьим лицам, действующим на основании договора с Сайтом, для исполнения обязательств перед Пользователем и только в рамках настоящего Соглашения.</p>
+                <p>6. Персональные данные хранятся и обрабатываются до завершения всех необходимых процедур либо до ликвидации Сайта.</p>
+                <p>7. Согласие может быть отозвано Пользователем или его представителем путём направления письменного заявления на Сайт по электронному адресу info@amdmedia.ru</p>
+                <p>8. Пользователь принимает политику использования файлов cookies, используемую на Сайте, и даёт согласие на получение информации об IP-адресе и иных сведений о его активности на Сайте. Данная информация не используется для установления личности Пользователя.</p>
+                <p>9. Администрация при обработке персональных данных принимает необходимые и достаточные организационные и технические меры для защиты персональных данных от неправомерного доступа к ним, а также от иных неправомерных действий в отношении персональных данных.</p>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/imask.js"></script>
+    <script src="js/glightbox.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

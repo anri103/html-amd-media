@@ -1,0 +1,1556 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMD uslugi HTML</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/glightbox.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- Мобильное меню -->
+    <div class="menu-background-overlay" onclick="toggleMobileMenu()"></div>
+    <div class="site-mobile-menu">
+        <div class="site-mobile-menu-header">
+            <button class="btn-close" type="button" onclick="toggleMobileMenu()"></button>
+        </div>
+        <div class="site-mobile-menu-body">
+            <div class="py-3">
+                <ul class="site-nav-wrap">
+                    <li class="nav-item">
+                        <a href="projects.html" class="nav-link">Проекты</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="uslugi.html" class="nav-link">Услуги</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="company.html" class="nav-link">Компания</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="blog.html" class="nav-link">Журнал</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contacts.html" class="nav-link">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="py-3">
+                <button type="button" class="btn btn-primary" onclick="toggleModal()">Связаться</button>
+            </div>
+            <div class="py-3">
+                <ul class="list-inline mb-0">
+                    <li><a class="hover-opacity" href="#"><img src="img/icon-vk.svg" alt=""></a></li>
+                    <li><a class="hover-opacity" href="#"><img src="img/icon-telegram.svg" alt=""></a></li>
+                    <li><a class="hover-opacity" href="#"><img src="img/icon-wa.svg" alt=""></a></li>
+                </ul>
+            </div>
+            <div class="py-3">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">+7 (495) 159-59-01</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">support@amdmedia.ru</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Основное меню сверху -->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+
+                <a class="logo hover-opacity" href="index.html">
+                    <img src="img/logo-black.svg" alt="">
+                </a>
+
+                <button class="btn navbar-toggler d-inline-block d-lg-none" type="button" onclick="toggleMobileMenu()">Меню</button>
+
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item"><a class="nav-link" href="projects.html">Проекты</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="uslugi.html">Услуги</a></li>
+                        <li class="nav-item"><a class="nav-link" href="company.html">Компания</a></li>
+                        <li class="nav-item"><a class="nav-link" href="blog.html">Журнал</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
+                    </ul>                    
+                </div>
+
+                <div class="d-none d-lg-flex align-items-center">
+                    <div class="mx-2 mx-xl-5">
+                        <button type="button" class="btn btn-primary" onclick="toggleModal()">Связаться</button>
+                    </div>
+                    <div class="d-none d-xl-block py-2">
+                        <a class="fw-600 color-black color-red-hover" href="#">+7 (495) 159-59-01</a>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+
+        <!-- Ссылка назад -->
+        <section class="section section-back-link">
+            <div class="container">
+                <a class="back-link color-black color-red-hover d-inline-flex align-items-center" href="#">
+                    <img class="flex-shrink-0 me-2" src="img/arrow-up-right.svg" alt="">
+                    <span>Назад</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Контент -->
+        <section class="section py-xl">
+            <div class="container">
+
+                <!-- item-01 -->
+                <div class="mb-5">
+                    <div class="mb-3">
+                        <a class="btn-accordeon collapsed" href="#collapse-01" data-bs-toggle="collapse" role="button"
+                            aria-expanded="false" aria-controls="collapse-01">
+                            <span class="fz-48 me-4">Сайты и сервисы</span>
+                            <img class="accordion-caret flex-shrink-0" src="img/more-arrow.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="collapse" id="collapse-01">
+                        <div class="position-relative mb-5">
+                            <div class="row g-4">
+                                <div class="col-lg-3 order-lg-2">
+                                    <div class="nav flex-column sidebar-nav" role="tablist" aria-orientation="vertical">
+                                        <button type="button" class="nav-link active" data-bs-toggle="pill"
+                                            data-bs-target="#v-pills-sites-01" role="tab"
+                                            aria-controls="v-pills-sites-01" aria-selected="true">Корпоративные
+                                            сайты</button>
+                                        <button type="button" class="nav-link" data-bs-toggle="pill"
+                                            data-bs-target="#v-pills-sites-02" role="tab"
+                                            aria-controls="v-pills-sites-02" aria-selected="true">Веб-сервисы</button>
+                                        <button type="button" class="nav-link" data-bs-toggle="pill"
+                                            data-bs-target="#v-pills-sites-03" role="tab"
+                                            aria-controls="v-pills-sites-03" aria-selected="true">Порталы</button>
+                                        <button type="button" class="nav-link" data-bs-toggle="pill"
+                                            data-bs-target="#v-pills-sites-04" role="tab"
+                                            aria-controls="v-pills-sites-04" aria-selected="true">Системы
+                                            сайтов</button>
+                                        <button type="button" class="nav-link" data-bs-toggle="pill"
+                                            data-bs-target="#v-pills-sites-01" role="tab"
+                                            aria-controls="v-pills-sites-01" aria-selected="true">Каталоги и
+                                            витрины</button>
+                                        <button type="button" class="nav-link" data-bs-toggle="pill"
+                                            data-bs-target="#v-pills-sites-02" role="tab"
+                                            aria-controls="v-pills-sites-02"
+                                            aria-selected="true">Интернет-магазины</button>
+                                        <button type="button" class="nav-link" data-bs-toggle="pill"
+                                            data-bs-target="#v-pills-sites-03" role="tab"
+                                            aria-controls="v-pills-sites-03" aria-selected="true">Промо-сайты</button>
+                                        <button type="button" class="nav-link" data-bs-toggle="pill"
+                                            data-bs-target="#v-pills-sites-04" role="tab"
+                                            aria-controls="v-pills-sites-04" aria-selected="true">No-code</button>
+                                    </div>
+                                </div>
+                                <div class="col-lg-9 order-lg-1">
+                                    <div class="tab-content">
+                                        <!-- item-01-01 -->
+                                        <div class="tab-pane fade show active" id="v-pills-sites-01" role="tabpanel"
+                                            aria-labelledby="v-pills-sites-01-tab" tabindex="0">
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <div class="d-flex flex-column justify-content-between h-100">
+                                                        <p>Создаем удобные и эффективные сайты, которые нравятся
+                                                            пользователям и хорошо
+                                                            продвигаются в поисковых системах.</p>
+                                                        <p class="fw-600">Корпоративный сайт — визитная карточка
+                                                            компании на просторах интернета. Сайт
+                                                            создается для того, чтобы предоставить максимум информации
+                                                            аудитории о сфере
+                                                            деятельности компании, об услугах и товарах, которые
+                                                            предоставляет фирма,
+                                                            контакты и прочее.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <img class="img-floating" src="img/uslugi-01.jpg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- item-01-02 -->
+                                        <div class="tab-pane fade" id="v-pills-sites-02" role="tabpanel"
+                                            aria-labelledby="v-pills-sites-02-tab" tabindex="0">
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <div class="d-flex flex-column justify-content-between h-100">
+                                                        <p>Создаем удобные и эффективные сайты, которые нравятся
+                                                            пользователям и хорошо
+                                                            продвигаются в поисковых системах.</p>
+                                                        <p class="fw-600">Корпоративный сайт — визитная карточка
+                                                            компании на просторах интернета. Сайт
+                                                            создается для того, чтобы предоставить максимум информации
+                                                            аудитории о сфере
+                                                            деятельности компании, об услугах и товарах, которые
+                                                            предоставляет фирма,
+                                                            контакты и прочее.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <img class="img-floating" src="img/uslugi-02.jpg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- item-01-03 -->
+                                        <div class="tab-pane fade" id="v-pills-sites-03" role="tabpanel"
+                                            aria-labelledby="v-pills-sites-03-tab" tabindex="0">
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <div class="d-flex flex-column justify-content-between h-100">
+                                                        <p>Создаем удобные и эффективные сайты, которые нравятся
+                                                            пользователям и хорошо
+                                                            продвигаются в поисковых системах.</p>
+                                                        <p class="fw-600">Корпоративный сайт — визитная карточка
+                                                            компании на просторах интернета. Сайт
+                                                            создается для того, чтобы предоставить максимум информации
+                                                            аудитории о сфере
+                                                            деятельности компании, об услугах и товарах, которые
+                                                            предоставляет фирма,
+                                                            контакты и прочее.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <img class="img-floating" src="img/uslugi-01.jpg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- item-01-04 -->
+                                        <div class="tab-pane fade" id="v-pills-sites-04" role="tabpanel"
+                                            aria-labelledby="v-pills-sites-04-tab" tabindex="0">
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <div class="d-flex flex-column justify-content-between h-100">
+                                                        <p>Создаем удобные и эффективные сайты, которые нравятся
+                                                            пользователям и хорошо
+                                                            продвигаются в поисковых системах.</p>
+                                                        <p class="fw-600">Корпоративный сайт — визитная карточка
+                                                            компании на просторах интернета. Сайт
+                                                            создается для того, чтобы предоставить максимум информации
+                                                            аудитории о сфере
+                                                            деятельности компании, об услугах и товарах, которые
+                                                            предоставляет фирма,
+                                                            контакты и прочее.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <img class="img-floating" src="img/uslugi-02.jpg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="position-relative mb-5">
+                            <div class="row">
+                                <div class="col-lg-10">
+                                    <div class="row g-5">
+                                        <div class="col-lg-6">
+                                            <div class="hover-cursor">
+                                                <p class="fz-30 fw-600">1.1</p>
+                                                <p class="fz-32">Исследования и инсайты</p>
+                                                <p class="fz-20">Мы создаем ad-hoc исследовательские решения для наших
+                                                    клиентов. А также работаем с любыми типами исследований рынка и
+                                                    аудитории для поиска настоящих инсайтов, на которые можно опереться</p>
+                                                <p class="fz-32">5+ рабочих дней</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="hover-cursor">
+                                                <p class="fz-30 fw-600">1.2</p>
+                                            <p class="fz-32">Исследования и инсайты</p>
+                                            <p class="fz-20">Мы создаем ad-hoc исследовательские решения для наших
+                                                клиентов. А также работаем с любыми типами исследований рынка и
+                                                аудитории для поиска настоящих инсайтов, на которые можно опереться</p>
+                                            <p class="fz-32">5+ рабочих дней</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="hover-cursor">
+                                                <p class="fz-30 fw-600">1.3</p>
+                                            <p class="fz-32">Исследования и инсайты</p>
+                                            <p class="fz-20">Мы создаем ad-hoc исследовательские решения для наших
+                                                клиентов. А также работаем с любыми типами исследований рынка и
+                                                аудитории для поиска настоящих инсайтов, на которые можно опереться</p>
+                                            <p class="fz-32">5+ рабочих дней</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="hover-cursor">
+                                                <p class="fz-30 fw-600">1.4</p>
+                                            <p class="fz-32">Исследования и инсайты</p>
+                                            <p class="fz-20">Мы создаем ad-hoc исследовательские решения для наших
+                                                клиентов. А также работаем с любыми типами исследований рынка и
+                                                аудитории для поиска настоящих инсайтов, на которые можно опереться</p>
+                                            <p class="fz-32">5+ рабочих дней</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="hover-cursor">
+                                                <p class="fz-30 fw-600">1.5</p>
+                                            <p class="fz-32">Исследования и инсайты</p>
+                                            <p class="fz-20">Мы создаем ad-hoc исследовательские решения для наших
+                                                клиентов. А также работаем с любыми типами исследований рынка и
+                                                аудитории для поиска настоящих инсайтов, на которые можно опереться</p>
+                                            <p class="fz-32">5+ рабочих дней</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="hover-cursor">
+                                                <p class="fz-30 fw-600">1.6</p>
+                                            <p class="fz-32">Исследования и инсайты</p>
+                                            <p class="fz-20">Мы создаем ad-hoc исследовательские решения для наших
+                                                клиентов. А также работаем с любыми типами исследований рынка и
+                                                аудитории для поиска настоящих инсайтов, на которые можно опереться</p>
+                                            <p class="fz-32">5+ рабочих дней</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- item-02 -->
+                <div class="mb-5">
+                    <div class="mb-3">
+                        <a class="btn-accordeon collapsed" href="#collapse-02" data-bs-toggle="collapse" role="button"
+                            aria-expanded="false" aria-controls="collapse-02">
+                            <span class="fz-48 me-4">Дизайн</span>
+                            <img class="accordion-caret flex-shrink-0" src="img/more-arrow.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="collapse" id="collapse-02">
+                        <div class="position-relative mb-5">
+                            <div class="row g-4">
+                                <div class="col-lg-3 order-lg-2">
+                                    <div class="nav flex-column sidebar-nav" role="tablist" aria-orientation="vertical">
+                                        <button type="button" class="nav-link active" data-bs-toggle="pill"
+                                            data-bs-target="#v-pills-design-01" role="tab"
+                                            aria-controls="v-pills-design-01" aria-selected="true">Графика и
+                                            анимация</button>
+                                        <button type="button" class="nav-link" data-bs-toggle="pill"
+                                            data-bs-target="#v-pills-design-02" role="tab"
+                                            aria-controls="v-pills-design-02" aria-selected="true">UX/UI дизайн</button>
+                                        <button type="button" class="nav-link" data-bs-toggle="pill"
+                                            data-bs-target="#v-pills-design-03" role="tab"
+                                            aria-controls="v-pills-design-03" aria-selected="true">Брендинг и фирменный
+                                            стиль</button>
+                                        <button type="button" class="nav-link" data-bs-toggle="pill"
+                                            data-bs-target="#v-pills-design-04" role="tab"
+                                            aria-controls="v-pills-design-04" aria-selected="true">3D —
+                                            визуализация</button>
+                                        <button type="button" class="nav-link" data-bs-toggle="pill"
+                                            data-bs-target="#v-pills-design-01" role="tab"
+                                            aria-controls="v-pills-design-01" aria-selected="true">Портфельная стратегия
+                                            и архитектура бренда</button>
+                                        <button type="button" class="nav-link" data-bs-toggle="pill"
+                                            data-bs-target="#v-pills-design-02" role="tab"
+                                            aria-controls="v-pills-design-02" aria-selected="true">Digital &
+                                            Mobile</button>
+                                        <button type="button" class="nav-link" data-bs-toggle="pill"
+                                            data-bs-target="#v-pills-design-03" role="tab"
+                                            aria-controls="v-pills-design-03" aria-selected="true">Промо —
+                                            сайты</button>
+                                    </div>
+                                </div>
+                                <div class="col-lg-9 order-lg-1">
+                                    <div class="tab-content">
+                                        <!-- item-02-01 -->
+                                        <div class="tab-pane fade show active" id="v-pills-design-01" role="tabpanel"
+                                            aria-labelledby="v-pills-design-01-tab" tabindex="0">
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <div class="d-flex flex-column justify-content-between h-100">
+                                                        <p>Создаём дизайн интернет — проектов, который решает
+                                                            бизнес-задачи и отлично живёт
+                                                            в цифровой среде.</p>
+                                                        <p class="fw-600">Корпоративный сайт — визитная карточка
+                                                            компании на просторах интернета. Сайт
+                                                            создается для того, чтобы предоставить максимум информации
+                                                            аудитории о сфере
+                                                            деятельности компании, об услугах и товарах, которые
+                                                            предоставляет фирма,
+                                                            контакты и прочее.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <img class="img-floating" src="img/uslugi-01.jpg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- item-02-02 -->
+                                        <div class="tab-pane fade" id="v-pills-design-02" role="tabpanel"
+                                            aria-labelledby="v-pills-design-02-tab" tabindex="0">
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <div class="d-flex flex-column justify-content-between h-100">
+                                                        <p>Создаём дизайн интернет — проектов, который решает
+                                                            бизнес-задачи и отлично живёт
+                                                            в цифровой среде.</p>
+                                                        <p class="fw-600">Корпоративный сайт — визитная карточка
+                                                            компании на просторах интернета. Сайт
+                                                            создается для того, чтобы предоставить максимум информации
+                                                            аудитории о сфере
+                                                            деятельности компании, об услугах и товарах, которые
+                                                            предоставляет фирма,
+                                                            контакты и прочее.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <img class="img-floating" src="img/uslugi-02.jpg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- item-02-03 -->
+                                        <div class="tab-pane fade" id="v-pills-design-03" role="tabpanel"
+                                            aria-labelledby="v-pills-design-03-tab" tabindex="0">
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <div class="d-flex flex-column justify-content-between h-100">
+                                                        <p>Создаём дизайн интернет — проектов, который решает
+                                                            бизнес-задачи и отлично живёт
+                                                            в цифровой среде.</p>
+                                                        <p class="fw-600">Корпоративный сайт — визитная карточка
+                                                            компании на просторах интернета. Сайт
+                                                            создается для того, чтобы предоставить максимум информации
+                                                            аудитории о сфере
+                                                            деятельности компании, об услугах и товарах, которые
+                                                            предоставляет фирма,
+                                                            контакты и прочее.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <img class="img-floating" src="img/uslugi-01.jpg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- item-02-04 -->
+                                        <div class="tab-pane fade" id="v-pills-design-04" role="tabpanel"
+                                            aria-labelledby="v-pills-design-04-tab" tabindex="0">
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <div class="d-flex flex-column justify-content-between h-100">
+                                                        <p>Создаём дизайн интернет — проектов, который решает
+                                                            бизнес-задачи и отлично живёт
+                                                            в цифровой среде.</p>
+                                                        <p class="fw-600">Корпоративный сайт — визитная карточка
+                                                            компании на просторах интернета. Сайт
+                                                            создается для того, чтобы предоставить максимум информации
+                                                            аудитории о сфере
+                                                            деятельности компании, об услугах и товарах, которые
+                                                            предоставляет фирма,
+                                                            контакты и прочее.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <img class="img-floating" src="img/uslugi-02.jpg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="position-relative mb-5">
+                            <div class="row">
+                                <div class="col-lg-10">
+                                    <div class="row g-5">
+                                        <div class="col-lg-6">
+                                            <div class="hover-cursor">
+                                                <p class="fz-30 fw-600">1.1</p>
+                                            <p class="fz-32">Дизайн-аналитика</p>
+                                            <p class="fz-20">Мы создаем ad-hoc исследовательские решения для наших
+                                                клиентов. А также работаем с любыми типами исследований рынка и
+                                                аудитории для поиска настоящих инсайтов, на которые можно опереться</p>
+                                            <p class="fz-32">5+ рабочих дней</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="hover-cursor">
+                                                <p class="fz-30 fw-600">1.2</p>
+                                            <p class="fz-32">Дизайн-аналитика</p>
+                                            <p class="fz-20">Мы создаем ad-hoc исследовательские решения для наших
+                                                клиентов. А также работаем с любыми типами исследований рынка и
+                                                аудитории для поиска настоящих инсайтов, на которые можно опереться</p>
+                                            <p class="fz-32">5+ рабочих дней</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="hover-cursor">
+                                                <p class="fz-30 fw-600">1.3</p>
+                                            <p class="fz-32">Концептуальная подача</p>
+                                            <p class="fz-20">Мы создаем ad-hoc исследовательские решения для наших
+                                                клиентов. А также работаем с любыми типами исследований рынка и
+                                                аудитории для поиска настоящих инсайтов, на которые можно опереться</p>
+                                            <p class="fz-32">5+ рабочих дней</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="hover-cursor">
+                                                <p class="fz-30 fw-600">1.4</p>
+                                            <p class="fz-32">Исследования и инсайты</p>
+                                            <p class="fz-20">Мы создаем ad-hoc исследовательские решения для наших
+                                                клиентов. А также работаем с любыми типами исследований рынка и
+                                                аудитории для поиска настоящих инсайтов, на которые можно опереться</p>
+                                            <p class="fz-32">5+ рабочих дней</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="hover-cursor">
+                                                <p class="fz-30 fw-600">1.5</p>
+                                            <p class="fz-32">Исследования и инсайты</p>
+                                            <p class="fz-20">Мы создаем ad-hoc исследовательские решения для наших
+                                                клиентов. А также работаем с любыми типами исследований рынка и
+                                                аудитории для поиска настоящих инсайтов, на которые можно опереться</p>
+                                            <p class="fz-32">5+ рабочих дней</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="hover-cursor">
+                                                <p class="fz-30 fw-600">1.6</p>
+                                            <p class="fz-32">Исследования и инсайты</p>
+                                            <p class="fz-20">Мы создаем ad-hoc исследовательские решения для наших
+                                                клиентов. А также работаем с любыми типами исследований рынка и
+                                                аудитории для поиска настоящих инсайтов, на которые можно опереться</p>
+                                            <p class="fz-32">5+ рабочих дней</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- item-03 -->
+                <div class="mb-5">
+                    <div class="mb-3">
+                        <a class="btn-accordeon collapsed" href="#collapse-03" data-bs-toggle="collapse" role="button"
+                            aria-expanded="false" aria-controls="collapse-03">
+                            <span class="fz-48 me-4">Аналитика</span>
+                            <img class="accordion-caret flex-shrink-0" src="img/more-arrow.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="collapse" id="collapse-03">
+                        <div class="position-relative mb-5">
+                            <div class="row g-4">
+                                <div class="col-lg-3 order-lg-2">
+                                    <div class="nav flex-column sidebar-nav" role="tablist" aria-orientation="vertical">
+                                        <button type="button" class="nav-link active" data-bs-toggle="pill"
+                                            data-bs-target="#v-pills-analytics-01" role="tab"
+                                            aria-controls="v-pills-analytics-01" aria-selected="true">Продуктовая аналитика</button>
+                                        <button type="button" class="nav-link" data-bs-toggle="pill"
+                                            data-bs-target="#v-pills-analytics-02" role="tab"
+                                            aria-controls="v-pills-analytics-02" aria-selected="true">Маркетинговая аналитика</button>
+                                        <button type="button" class="nav-link" data-bs-toggle="pill"
+                                            data-bs-target="#v-pills-analytics-01" role="tab"
+                                            aria-controls="v-pills-analytics-01" aria-selected="true">Мобильная аналитика</button>
+                                        <button type="button" class="nav-link" data-bs-toggle="pill"
+                                            data-bs-target="#v-pills-analytics-02" role="tab"
+                                            aria-controls="v-pills-analytics-02" aria-selected="true">Сквозная аналитика</button>
+                                    </div>
+                                </div>
+                                <div class="col-lg-9 order-lg-1">
+                                    <div class="tab-content">
+                                        <!-- item-03-01 -->
+                                        <div class="tab-pane fade show active" id="v-pills-analytics-01" role="tabpanel"
+                                            aria-labelledby="v-pills-analytics-01-tab" tabindex="0">
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <div class="d-flex flex-column justify-content-between h-100">
+                                                        <p>Проводим аналитические исследования и обобщаем данные в определенной сфере деятельности,  в совершенстве владеем методами анализа,  прогнозируем процессы и разрабатываем перспективные программы развития</p>
+                                                        <p class="fw-600">Корпоративный сайт — визитная карточка
+                                                            компании на просторах интернета. Сайт
+                                                            создается для того, чтобы предоставить максимум информации
+                                                            аудитории о сфере
+                                                            деятельности компании, об услугах и товарах, которые
+                                                            предоставляет фирма,
+                                                            контакты и прочее.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <img class="img-floating" src="img/uslugi-01.jpg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- item-03-02 -->
+                                        <div class="tab-pane fade" id="v-pills-analytics-02" role="tabpanel"
+                                            aria-labelledby="v-pills-analytics-02-tab" tabindex="0">
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <div class="d-flex flex-column justify-content-between h-100">
+                                                        <p>Проводим аналитические исследования и обобщаем данные в определенной сфере деятельности,  в совершенстве владеем методами анализа,  прогнозируем процессы и разрабатываем перспективные программы развития</p>
+                                                        <p class="fw-600">Корпоративный сайт — визитная карточка
+                                                            компании на просторах интернета. Сайт
+                                                            создается для того, чтобы предоставить максимум информации
+                                                            аудитории о сфере
+                                                            деятельности компании, об услугах и товарах, которые
+                                                            предоставляет фирма,
+                                                            контакты и прочее.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <img class="img-floating" src="img/uslugi-02.jpg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="position-relative mb-5">
+                            <div class="row">
+                                <div class="col-lg-10">
+                                    <div class="row g-5">
+                                        <div class="col-lg-6">
+                                            <div class="hover-cursor">
+                                                <p class="fz-30 fw-600">1.1</p>
+                                            <p class="fz-32">Дизайн-аналитика</p>
+                                            <p class="fz-20">Мы создаем ad-hoc исследовательские решения для наших
+                                                клиентов. А также работаем с любыми типами исследований рынка и
+                                                аудитории для поиска настоящих инсайтов, на которые можно опереться</p>
+                                            <p class="fz-32">5+ рабочих дней</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="hover-cursor">
+                                                <p class="fz-30 fw-600">1.2</p>
+                                            <p class="fz-32">Дизайн-аналитика</p>
+                                            <p class="fz-20">Мы создаем ad-hoc исследовательские решения для наших
+                                                клиентов. А также работаем с любыми типами исследований рынка и
+                                                аудитории для поиска настоящих инсайтов, на которые можно опереться</p>
+                                            <p class="fz-32">5+ рабочих дней</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="hover-cursor">
+                                                <p class="fz-30 fw-600">1.3</p>
+                                            <p class="fz-32">Концептуальная подача</p>
+                                            <p class="fz-20">Мы создаем ad-hoc исследовательские решения для наших
+                                                клиентов. А также работаем с любыми типами исследований рынка и
+                                                аудитории для поиска настоящих инсайтов, на которые можно опереться</p>
+                                            <p class="fz-32">5+ рабочих дней</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="hover-cursor">
+                                                <p class="fz-30 fw-600">1.4</p>
+                                            <p class="fz-32">Исследования и инсайты</p>
+                                            <p class="fz-20">Мы создаем ad-hoc исследовательские решения для наших
+                                                клиентов. А также работаем с любыми типами исследований рынка и
+                                                аудитории для поиска настоящих инсайтов, на которые можно опереться</p>
+                                            <p class="fz-32">5+ рабочих дней</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="hover-cursor">
+                                                <p class="fz-30 fw-600">1.5</p>
+                                            <p class="fz-32">Исследования и инсайты</p>
+                                            <p class="fz-20">Мы создаем ad-hoc исследовательские решения для наших
+                                                клиентов. А также работаем с любыми типами исследований рынка и
+                                                аудитории для поиска настоящих инсайтов, на которые можно опереться</p>
+                                            <p class="fz-32">5+ рабочих дней</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="hover-cursor">
+                                                <p class="fz-30 fw-600">1.6</p>
+                                            <p class="fz-32">Исследования и инсайты</p>
+                                            <p class="fz-20">Мы создаем ad-hoc исследовательские решения для наших
+                                                клиентов. А также работаем с любыми типами исследований рынка и
+                                                аудитории для поиска настоящих инсайтов, на которые можно опереться</p>
+                                            <p class="fz-32">5+ рабочих дней</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- item-04 -->
+                <div class="mb-5">
+                    <div class="mb-3">
+                        <a class="btn-accordeon collapsed" href="#collapse-04" data-bs-toggle="collapse" role="button"
+                            aria-expanded="false" aria-controls="collapse-04">
+                            <span class="fz-48 me-4">SEO-продвижение</span>
+                            <img class="accordion-caret flex-shrink-0" src="img/more-arrow.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="collapse" id="collapse-04">
+                        <div class="position-relative mb-5">
+                            <div class="row g-4">
+                                <div class="col-lg-3 order-lg-2">
+                                    <div class="nav flex-column sidebar-nav" role="tablist" aria-orientation="vertical">
+                                        <button type="button" class="nav-link active" data-bs-toggle="pill"
+                                            data-bs-target="#v-pills-seo-01" role="tab"
+                                            aria-controls="v-pills-seo-01" aria-selected="true">Семантическое ядро</button>
+                                        <button type="button" class="nav-link" data-bs-toggle="pill"
+                                            data-bs-target="#v-pills-seo-02" role="tab"
+                                            aria-controls="v-pills-seo-02" aria-selected="true">Аудит сайта</button>
+                                        <button type="button" class="nav-link" data-bs-toggle="pill"
+                                            data-bs-target="#v-pills-seo-01" role="tab"
+                                            aria-controls="v-pills-seo-01" aria-selected="true">Продвижение сайта</button>
+                                        <button type="button" class="nav-link" data-bs-toggle="pill"
+                                            data-bs-target="#v-pills-seo-02" role="tab"
+                                            aria-controls="v-pills-seo-02" aria-selected="true">Консультации</button>
+                                        <button type="button" class="nav-link" data-bs-toggle="pill"
+                                            data-bs-target="#v-pills-seo-01" role="tab"
+                                            aria-controls="v-pills-seo-01" aria-selected="true">Скоринг и прогноз</button>
+                                        <button type="button" class="nav-link" data-bs-toggle="pill"
+                                            data-bs-target="#v-pills-seo-02" role="tab"
+                                            aria-controls="v-pills-seo-02" aria-selected="true">SEO-аналитика для мобильных устройств</button>
+                                    </div>
+                                </div>
+                                <div class="col-lg-9 order-lg-1">
+                                    <div class="tab-content">
+                                        <!-- item-04-01 -->
+                                        <div class="tab-pane fade show active" id="v-pills-seo-01" role="tabpanel"
+                                            aria-labelledby="v-pills-seo-01-tab" tabindex="0">
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <div class="d-flex flex-column justify-content-between h-100">
+                                                        <p>Создаем удобные и эффективные сайты, которые нравятся пользователям и хорошо
+                                                            продвигаются в поисковых системах.</p>
+                                                        <p class="fw-600">Корпоративный сайт — визитная карточка
+                                                            компании на просторах интернета. Сайт
+                                                            создается для того, чтобы предоставить максимум информации
+                                                            аудитории о сфере
+                                                            деятельности компании, об услугах и товарах, которые
+                                                            предоставляет фирма,
+                                                            контакты и прочее.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <img class="img-floating" src="img/uslugi-01.jpg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- item-04-02 -->
+                                        <div class="tab-pane fade" id="v-pills-seo-02" role="tabpanel"
+                                            aria-labelledby="v-pills-seo-02-tab" tabindex="0">
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <div class="d-flex flex-column justify-content-between h-100">
+                                                        <p>Создаем удобные и эффективные сайты, которые нравятся пользователям и хорошо
+                                                            продвигаются в поисковых системах.</p>
+                                                        <p class="fw-600">Корпоративный сайт — визитная карточка
+                                                            компании на просторах интернета. Сайт
+                                                            создается для того, чтобы предоставить максимум информации
+                                                            аудитории о сфере
+                                                            деятельности компании, об услугах и товарах, которые
+                                                            предоставляет фирма,
+                                                            контакты и прочее.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <img class="img-floating" src="img/uslugi-02.jpg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="position-relative mb-5">
+                            <div class="row">
+                                <div class="col-lg-10">
+                                    <div class="row g-5">
+                                        <div class="col-lg-6">
+                                            <div class="hover-cursor">
+                                                <p class="fz-30 fw-600">1.1</p>
+                                            <p class="fz-32">Дизайн-аналитика</p>
+                                            <p class="fz-20">Мы создаем ad-hoc исследовательские решения для наших
+                                                клиентов. А также работаем с любыми типами исследований рынка и
+                                                аудитории для поиска настоящих инсайтов, на которые можно опереться</p>
+                                            <p class="fz-32">5+ рабочих дней</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="hover-cursor">
+                                                <p class="fz-30 fw-600">1.2</p>
+                                            <p class="fz-32">Дизайн-аналитика</p>
+                                            <p class="fz-20">Мы создаем ad-hoc исследовательские решения для наших
+                                                клиентов. А также работаем с любыми типами исследований рынка и
+                                                аудитории для поиска настоящих инсайтов, на которые можно опереться</p>
+                                            <p class="fz-32">5+ рабочих дней</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="hover-cursor">
+                                                <p class="fz-30 fw-600">1.3</p>
+                                            <p class="fz-32">Концептуальная подача</p>
+                                            <p class="fz-20">Мы создаем ad-hoc исследовательские решения для наших
+                                                клиентов. А также работаем с любыми типами исследований рынка и
+                                                аудитории для поиска настоящих инсайтов, на которые можно опереться</p>
+                                            <p class="fz-32">5+ рабочих дней</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="hover-cursor">
+                                                <p class="fz-30 fw-600">1.4</p>
+                                            <p class="fz-32">Исследования и инсайты</p>
+                                            <p class="fz-20">Мы создаем ad-hoc исследовательские решения для наших
+                                                клиентов. А также работаем с любыми типами исследований рынка и
+                                                аудитории для поиска настоящих инсайтов, на которые можно опереться</p>
+                                            <p class="fz-32">5+ рабочих дней</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="hover-cursor">
+                                                <p class="fz-30 fw-600">1.5</p>
+                                            <p class="fz-32">Исследования и инсайты</p>
+                                            <p class="fz-20">Мы создаем ad-hoc исследовательские решения для наших
+                                                клиентов. А также работаем с любыми типами исследований рынка и
+                                                аудитории для поиска настоящих инсайтов, на которые можно опереться</p>
+                                            <p class="fz-32">5+ рабочих дней</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="hover-cursor">
+                                                <p class="fz-30 fw-600">1.6</p>
+                                            <p class="fz-32">Исследования и инсайты</p>
+                                            <p class="fz-20">Мы создаем ad-hoc исследовательские решения для наших
+                                                клиентов. А также работаем с любыми типами исследований рынка и
+                                                аудитории для поиска настоящих инсайтов, на которые можно опереться</p>
+                                            <p class="fz-32">5+ рабочих дней</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- item-05 -->
+                <div class="mb-5">
+                    <div class="mb-3">
+                        <a class="btn-accordeon collapsed" href="#collapse-05" data-bs-toggle="collapse" role="button"
+                            aria-expanded="false" aria-controls="collapse-05">
+                            <span class="fz-48 me-4">Маркетенговое сопровождение</span>
+                            <img class="accordion-caret flex-shrink-0" src="img/more-arrow.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="collapse" id="collapse-05">
+                        <div class="position-relative mb-5">
+                            <div class="row g-4">
+                                <div class="col-lg-3 order-lg-2">
+                                    <div class="nav flex-column sidebar-nav" role="tablist" aria-orientation="vertical">
+                                        <button type="button" class="nav-link active" data-bs-toggle="pill"
+                                            data-bs-target="#v-pills-marketing-01" role="tab"
+                                            aria-controls="v-pills-marketing-01" aria-selected="true">Настройка контекстной рекламы Яндекс Директ</button>
+                                        <button type="button" class="nav-link" data-bs-toggle="pill"
+                                            data-bs-target="#v-pills-marketing-02" role="tab"
+                                            aria-controls="v-pills-marketing-02" aria-selected="true">Таргетированная реклама в соц. сетях</button>
+                                        <button type="button" class="nav-link" data-bs-toggle="pill"
+                                            data-bs-target="#v-pills-marketing-01" role="tab"
+                                            aria-controls="v-pills-marketing-01" aria-selected="true">SMM / SMO</button>
+                                        <button type="button" class="nav-link" data-bs-toggle="pill"
+                                            data-bs-target="#v-pills-marketing-02" role="tab"
+                                            aria-controls="v-pills-marketing-02" aria-selected="true">Копирайтинг</button>
+                                        <button type="button" class="nav-link" data-bs-toggle="pill"
+                                            data-bs-target="#v-pills-marketing-01" role="tab"
+                                            aria-controls="v-pills-marketing-01" aria-selected="true">Контент маргетинг</button>
+                                        <button type="button" class="nav-link" data-bs-toggle="pill"
+                                            data-bs-target="#v-pills-marketing-02" role="tab"
+                                            aria-controls="v-pills-marketing-02" aria-selected="true">Настройка рекламной компании через myTarget</button>
+                                    </div>
+                                </div>
+                                <div class="col-lg-9 order-lg-1">
+                                    <div class="tab-content">
+                                        <!-- item-05-01 -->
+                                        <div class="tab-pane fade show active" id="v-pills-marketing-01" role="tabpanel"
+                                            aria-labelledby="v-pills-marketing-01-tab" tabindex="0">
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <div class="d-flex flex-column justify-content-between h-100">
+                                                        <p>Создаем удобные и эффективные сайты, которые нравятся пользователям и хорошо
+                                                            продвигаются в поисковых системах.</p>
+                                                        <p class="fw-600">Корпоративный сайт — визитная карточка
+                                                            компании на просторах интернета. Сайт
+                                                            создается для того, чтобы предоставить максимум информации
+                                                            аудитории о сфере
+                                                            деятельности компании, об услугах и товарах, которые
+                                                            предоставляет фирма,
+                                                            контакты и прочее.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <img class="img-floating" src="img/uslugi-01.jpg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- item-05-02 -->
+                                        <div class="tab-pane fade" id="v-pills-marketing-02" role="tabpanel"
+                                            aria-labelledby="v-pills-marketing-02-tab" tabindex="0">
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <div class="d-flex flex-column justify-content-between h-100">
+                                                        <p>Создаем удобные и эффективные сайты, которые нравятся пользователям и хорошо
+                                                            продвигаются в поисковых системах.</p>
+                                                        <p class="fw-600">Корпоративный сайт — визитная карточка
+                                                            компании на просторах интернета. Сайт
+                                                            создается для того, чтобы предоставить максимум информации
+                                                            аудитории о сфере
+                                                            деятельности компании, об услугах и товарах, которые
+                                                            предоставляет фирма,
+                                                            контакты и прочее.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <img class="img-floating" src="img/uslugi-02.jpg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="position-relative mb-5">
+                            <div class="row">
+                                <div class="col-lg-10">
+                                    <div class="row g-5">
+                                        <div class="col-lg-6">
+                                            <div class="hover-cursor">
+                                                <p class="fz-30 fw-600">1.1</p>
+                                            <p class="fz-32">Дизайн-аналитика</p>
+                                            <p class="fz-20">Мы создаем ad-hoc исследовательские решения для наших
+                                                клиентов. А также работаем с любыми типами исследований рынка и
+                                                аудитории для поиска настоящих инсайтов, на которые можно опереться</p>
+                                            <p class="fz-32">5+ рабочих дней</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="hover-cursor">
+                                                <p class="fz-30 fw-600">1.2</p>
+                                            <p class="fz-32">Дизайн-аналитика</p>
+                                            <p class="fz-20">Мы создаем ad-hoc исследовательские решения для наших
+                                                клиентов. А также работаем с любыми типами исследований рынка и
+                                                аудитории для поиска настоящих инсайтов, на которые можно опереться</p>
+                                            <p class="fz-32">5+ рабочих дней</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="hover-cursor">
+                                                <p class="fz-30 fw-600">1.3</p>
+                                            <p class="fz-32">Концептуальная подача</p>
+                                            <p class="fz-20">Мы создаем ad-hoc исследовательские решения для наших
+                                                клиентов. А также работаем с любыми типами исследований рынка и
+                                                аудитории для поиска настоящих инсайтов, на которые можно опереться</p>
+                                            <p class="fz-32">5+ рабочих дней</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="hover-cursor">
+                                                <p class="fz-30 fw-600">1.4</p>
+                                            <p class="fz-32">Исследования и инсайты</p>
+                                            <p class="fz-20">Мы создаем ad-hoc исследовательские решения для наших
+                                                клиентов. А также работаем с любыми типами исследований рынка и
+                                                аудитории для поиска настоящих инсайтов, на которые можно опереться</p>
+                                            <p class="fz-32">5+ рабочих дней</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="hover-cursor">
+                                                <p class="fz-30 fw-600">1.5</p>
+                                            <p class="fz-32">Исследования и инсайты</p>
+                                            <p class="fz-20">Мы создаем ad-hoc исследовательские решения для наших
+                                                клиентов. А также работаем с любыми типами исследований рынка и
+                                                аудитории для поиска настоящих инсайтов, на которые можно опереться</p>
+                                            <p class="fz-32">5+ рабочих дней</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="hover-cursor">
+                                                <p class="fz-30 fw-600">1.6</p>
+                                            <p class="fz-32">Исследования и инсайты</p>
+                                            <p class="fz-20">Мы создаем ad-hoc исследовательские решения для наших
+                                                клиентов. А также работаем с любыми типами исследований рынка и
+                                                аудитории для поиска настоящих инсайтов, на которые можно опереться</p>
+                                            <p class="fz-32">5+ рабочих дней</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- item-06 -->
+                <div class="mb-5">
+                    <div class="mb-3">
+                        <a class="btn-accordeon collapsed" href="#collapse-06" data-bs-toggle="collapse" role="button"
+                            aria-expanded="false" aria-controls="collapse-06">
+                            <span class="fz-48 me-4">Поддержка и развитие</span>
+                            <img class="accordion-caret flex-shrink-0" src="img/more-arrow.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="collapse" id="collapse-06">
+                        <div class="position-relative mb-5">
+                            <div class="row g-4">
+                                <div class="col-lg-3 order-lg-2">
+                                    <div class="nav flex-column sidebar-nav" role="tablist" aria-orientation="vertical">
+                                        <button type="button" class="nav-link active" data-bs-toggle="pill"
+                                            data-bs-target="#v-pills-support-01" role="tab"
+                                            aria-controls="v-pills-support-01" aria-selected="true">Front-end и back-end разработка</button>
+                                        <button type="button" class="nav-link" data-bs-toggle="pill"
+                                            data-bs-target="#v-pills-support-02" role="tab"
+                                            aria-controls="v-pills-support-02" aria-selected="true">Проектирование и дизайн</button>
+                                        <button type="button" class="nav-link" data-bs-toggle="pill"
+                                            data-bs-target="#v-pills-support-01" role="tab"
+                                            aria-controls="v-pills-support-01" aria-selected="true">Системное администрирование</button>
+                                        <button type="button" class="nav-link" data-bs-toggle="pill"
+                                            data-bs-target="#v-pills-support-02" role="tab"
+                                            aria-controls="v-pills-support-02" aria-selected="true">Комплексный аудит</button>
+                                    </div>
+                                </div>
+                                <div class="col-lg-9 order-lg-1">
+                                    <div class="tab-content">
+                                        <!-- item-06-01 -->
+                                        <div class="tab-pane fade show active" id="v-pills-support-01" role="tabpanel"
+                                            aria-labelledby="v-pills-support-01-tab" tabindex="0">
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <div class="d-flex flex-column justify-content-between h-100">
+                                                        <p>Создаем удобные и эффективные сайты, которые нравятся пользователям и хорошо
+                                                            продвигаются в поисковых системах.</p>
+                                                        <p class="fw-600">Корпоративный сайт — визитная карточка
+                                                            компании на просторах интернета. Сайт
+                                                            создается для того, чтобы предоставить максимум информации
+                                                            аудитории о сфере
+                                                            деятельности компании, об услугах и товарах, которые
+                                                            предоставляет фирма,
+                                                            контакты и прочее.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <img class="img-floating" src="img/uslugi-01.jpg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- item-06-02 -->
+                                        <div class="tab-pane fade" id="v-pills-support-02" role="tabpanel"
+                                            aria-labelledby="v-pills-support-02-tab" tabindex="0">
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <div class="d-flex flex-column justify-content-between h-100">
+                                                        <p>Создаем удобные и эффективные сайты, которые нравятся пользователям и хорошо
+                                                            продвигаются в поисковых системах.</p>
+                                                        <p class="fw-600">Корпоративный сайт — визитная карточка
+                                                            компании на просторах интернета. Сайт
+                                                            создается для того, чтобы предоставить максимум информации
+                                                            аудитории о сфере
+                                                            деятельности компании, об услугах и товарах, которые
+                                                            предоставляет фирма,
+                                                            контакты и прочее.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <img class="img-floating" src="img/uslugi-02.jpg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="position-relative mb-5">
+                            <div class="row">
+                                <div class="col-lg-10">
+                                    <div class="row g-5">
+                                        <div class="col-lg-6">
+                                            <div class="hover-cursor">
+                                                <p class="fz-30 fw-600">1.1</p>
+                                            <p class="fz-32">Дизайн-аналитика</p>
+                                            <p class="fz-20">Мы создаем ad-hoc исследовательские решения для наших
+                                                клиентов. А также работаем с любыми типами исследований рынка и
+                                                аудитории для поиска настоящих инсайтов, на которые можно опереться</p>
+                                            <p class="fz-32">5+ рабочих дней</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="hover-cursor">
+                                                <p class="fz-30 fw-600">1.2</p>
+                                            <p class="fz-32">Дизайн-аналитика</p>
+                                            <p class="fz-20">Мы создаем ad-hoc исследовательские решения для наших
+                                                клиентов. А также работаем с любыми типами исследований рынка и
+                                                аудитории для поиска настоящих инсайтов, на которые можно опереться</p>
+                                            <p class="fz-32">5+ рабочих дней</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="hover-cursor">
+                                                <p class="fz-30 fw-600">1.3</p>
+                                            <p class="fz-32">Концептуальная подача</p>
+                                            <p class="fz-20">Мы создаем ad-hoc исследовательские решения для наших
+                                                клиентов. А также работаем с любыми типами исследований рынка и
+                                                аудитории для поиска настоящих инсайтов, на которые можно опереться</p>
+                                            <p class="fz-32">5+ рабочих дней</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="hover-cursor">
+                                                <p class="fz-30 fw-600">1.4</p>
+                                            <p class="fz-32">Исследования и инсайты</p>
+                                            <p class="fz-20">Мы создаем ad-hoc исследовательские решения для наших
+                                                клиентов. А также работаем с любыми типами исследований рынка и
+                                                аудитории для поиска настоящих инсайтов, на которые можно опереться</p>
+                                            <p class="fz-32">5+ рабочих дней</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="hover-cursor">
+                                                <p class="fz-30 fw-600">1.5</p>
+                                            <p class="fz-32">Исследования и инсайты</p>
+                                            <p class="fz-20">Мы создаем ad-hoc исследовательские решения для наших
+                                                клиентов. А также работаем с любыми типами исследований рынка и
+                                                аудитории для поиска настоящих инсайтов, на которые можно опереться</p>
+                                            <p class="fz-32">5+ рабочих дней</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="hover-cursor">
+                                                <p class="fz-30 fw-600">1.6</p>
+                                            <p class="fz-32">Исследования и инсайты</p>
+                                            <p class="fz-20">Мы создаем ad-hoc исследовательские решения для наших
+                                                клиентов. А также работаем с любыми типами исследований рынка и
+                                                аудитории для поиска настоящих инсайтов, на которые можно опереться</p>
+                                            <p class="fz-32">5+ рабочих дней</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- item-07 -->
+                <div class="mb-5">
+                    <div class="mb-3">
+                        <a class="btn-accordeon collapsed" href="#collapse-07" data-bs-toggle="collapse" role="button"
+                            aria-expanded="false" aria-controls="collapse-07">
+                            <span class="fz-48 me-4">Автоматизация</span>
+                            <img class="accordion-caret flex-shrink-0" src="img/more-arrow.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="collapse" id="collapse-07">
+                        <div class="position-relative mb-5">
+                            <div class="row g-4">
+                                <div class="col-lg-3 order-lg-2">
+                                    <div class="nav flex-column sidebar-nav" role="tablist" aria-orientation="vertical">
+                                        <button type="button" class="nav-link active" data-bs-toggle="pill"
+                                            data-bs-target="#v-pills-avtomatization-01" role="tab"
+                                            aria-controls="v-pills-avtomatization-01" aria-selected="true">Продажи</button>
+                                        <button type="button" class="nav-link" data-bs-toggle="pill"
+                                            data-bs-target="#v-pills-avtomatization-02" role="tab"
+                                            aria-controls="v-pills-avtomatization-02" aria-selected="true">Логистика</button>
+                                        <button type="button" class="nav-link" data-bs-toggle="pill"
+                                            data-bs-target="#v-pills-avtomatization-01" role="tab"
+                                            aria-controls="v-pills-avtomatization-01" aria-selected="true">Маркетинг</button>
+                                        <button type="button" class="nav-link" data-bs-toggle="pill"
+                                            data-bs-target="#v-pills-avtomatization-02" role="tab"
+                                            aria-controls="v-pills-avtomatization-02" aria-selected="true">Бухгалтерия</button>
+                                    </div>
+                                </div>
+                                <div class="col-lg-9 order-lg-1">
+                                    <div class="tab-content">
+                                        <!-- item-05-01 -->
+                                        <div class="tab-pane fade show active" id="v-pills-avtomatization-01" role="tabpanel"
+                                            aria-labelledby="v-pills-avtomatization-01-tab" tabindex="0">
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <div class="d-flex flex-column justify-content-between h-100">
+                                                        <p>Создаем удобные и эффективные сайты, которые нравятся пользователям и хорошо
+                                                            продвигаются в поисковых системах.</p>
+                                                        <p class="fw-600">Корпоративный сайт — визитная карточка
+                                                            компании на просторах интернета. Сайт
+                                                            создается для того, чтобы предоставить максимум информации
+                                                            аудитории о сфере
+                                                            деятельности компании, об услугах и товарах, которые
+                                                            предоставляет фирма,
+                                                            контакты и прочее.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <img class="img-floating" src="img/uslugi-01.jpg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- item-05-02 -->
+                                        <div class="tab-pane fade" id="v-pills-avtomatization-02" role="tabpanel"
+                                            aria-labelledby="v-pills-avtomatization-02-tab" tabindex="0">
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <div class="d-flex flex-column justify-content-between h-100">
+                                                        <p>Создаем удобные и эффективные сайты, которые нравятся пользователям и хорошо
+                                                            продвигаются в поисковых системах.</p>
+                                                        <p class="fw-600">Корпоративный сайт — визитная карточка
+                                                            компании на просторах интернета. Сайт
+                                                            создается для того, чтобы предоставить максимум информации
+                                                            аудитории о сфере
+                                                            деятельности компании, об услугах и товарах, которые
+                                                            предоставляет фирма,
+                                                            контакты и прочее.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <img class="img-floating" src="img/uslugi-02.jpg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="position-relative mb-5">
+                            <div class="row">
+                                <div class="col-lg-10">
+                                    <div class="row g-5">
+                                        <div class="col-lg-6">
+                                            <div class="hover-cursor">
+                                                <p class="fz-30 fw-600">1.1</p>
+                                            <p class="fz-32">Дизайн-аналитика</p>
+                                            <p class="fz-20">Мы создаем ad-hoc исследовательские решения для наших
+                                                клиентов. А также работаем с любыми типами исследований рынка и
+                                                аудитории для поиска настоящих инсайтов, на которые можно опереться</p>
+                                            <p class="fz-32">5+ рабочих дней</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="hover-cursor">
+                                                <p class="fz-30 fw-600">1.2</p>
+                                            <p class="fz-32">Дизайн-аналитика</p>
+                                            <p class="fz-20">Мы создаем ad-hoc исследовательские решения для наших
+                                                клиентов. А также работаем с любыми типами исследований рынка и
+                                                аудитории для поиска настоящих инсайтов, на которые можно опереться</p>
+                                            <p class="fz-32">5+ рабочих дней</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="hover-cursor">
+                                                <p class="fz-30 fw-600">1.3</p>
+                                            <p class="fz-32">Концептуальная подача</p>
+                                            <p class="fz-20">Мы создаем ad-hoc исследовательские решения для наших
+                                                клиентов. А также работаем с любыми типами исследований рынка и
+                                                аудитории для поиска настоящих инсайтов, на которые можно опереться</p>
+                                            <p class="fz-32">5+ рабочих дней</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="hover-cursor">
+                                                <p class="fz-30 fw-600">1.4</p>
+                                            <p class="fz-32">Исследования и инсайты</p>
+                                            <p class="fz-20">Мы создаем ad-hoc исследовательские решения для наших
+                                                клиентов. А также работаем с любыми типами исследований рынка и
+                                                аудитории для поиска настоящих инсайтов, на которые можно опереться</p>
+                                            <p class="fz-32">5+ рабочих дней</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="hover-cursor">
+                                                <p class="fz-30 fw-600">1.5</p>
+                                            <p class="fz-32">Исследования и инсайты</p>
+                                            <p class="fz-20">Мы создаем ad-hoc исследовательские решения для наших
+                                                клиентов. А также работаем с любыми типами исследований рынка и
+                                                аудитории для поиска настоящих инсайтов, на которые можно опереться</p>
+                                            <p class="fz-32">5+ рабочих дней</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="hover-cursor">
+                                                <p class="fz-30 fw-600">1.6</p>
+                                            <p class="fz-32">Исследования и инсайты</p>
+                                            <p class="fz-20">Мы создаем ad-hoc исследовательские решения для наших
+                                                клиентов. А также работаем с любыми типами исследований рынка и
+                                                аудитории для поиска настоящих инсайтов, на которые можно опереться</p>
+                                            <p class="fz-32">5+ рабочих дней</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="row justify-content-end">
+                    <div class="col-lg-4">
+                        <div class="py-5">
+                            <button type="button" class="btn-rounded-interactive" onclick="toggleModal()">
+                                <div class="d-flex justify-content-between align-items-center px-2 px-lg-4">
+                                    <span class="fz-32 fw-600 me-3">начать проект</span>
+                                    <img class="rotate-link flex-shrink-0" src="img/more-arrow.svg" alt="">
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Смотрите также -->
+        <section class="section py-xl bg-color-black color-white">
+            <div class="container">
+                <div class="d-flex justify-content-between pb-50">
+                    <h2 class="m-0">Смотрите также</h2>
+                    <a class="fz-22 color-white-hover text-uppercase" href="projects.html">Все проекты</a>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="position-relative">
+                    <div class="swiper worksSwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="project-item.html">
+                                    <img src="img/projects_slider/001.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="project-item.html">
+                                    <img src="img/projects_slider/002.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="project-item.html">
+                                    <img src="img/projects_slider/005.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="project-item.html">
+                                    <img src="img/projects_slider/003.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="project-item.html">
+                                    <img src="img/projects_slider/004.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="project-item.html">
+                                    <img src="img/projects_slider/005.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="project-item.html">
+                                    <img src="img/projects_slider/002.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="project-item.html">
+                                    <img src="img/projects_slider/003.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col">
+                    <div class="footer__wiget">
+                        <p class="h3">Услуги</p>
+                        <ul class="nav flex-column">
+                            <li class="nav-item"><a class="nav-link" href="#">Сайты и сервисы</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Сопровождение и развитие</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Дизайн</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Мобильные приложения</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Аналитика</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">SERM / ORM</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Автоматизация</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="footer__wiget">
+                        <p class="h3">Направления</p>
+                        <ul class="nav flex-column">
+                            <li class="nav-item"><a class="nav-link" href="#">B2B - системы</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">UX/UI - дизайн</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">SEO-продвижение и контент
+                                    маргетинг</a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="#">CRM - системы</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Мобильные приложения </a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Сопровождение и развитие</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Разработка и внедрение корпоративных
+                                    порталов</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">E - COMMERCE решения</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="footer__wiget">
+                        <p class="h3">Проекты</p>
+                        <ul class="nav flex-column">
+                            <li class="nav-item"><a class="nav-link" href="#">E-commerce</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Mobile</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">B2B-порталы</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Битрикс24</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Корпоративные</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Сервисы</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="footer__wiget">
+                        <p class="h3">Агенство</p>
+                        <ul class="nav flex-column">
+                            <li class="nav-item"><a class="nav-link" href="#">О нас</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Команда</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Технологии</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Фото</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Отзывы</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Журнал</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="footer__contacts">
+                        <p class="h3">Контакты</p>
+                        <p><a class="color-black color-red-hover" href="#">+7 (495) 134-25-25</a></p>
+                        <p><a href="#">support@startsite.studio</a></p>
+                        <ul class="list-inline">
+                            <li><a class="hover-opacity" href="#"><img src="img/icon-vk.svg" alt=""></a></li>
+                            <li><a class="hover-opacity" href="#"><img src="img/icon-telegram.svg" alt=""></a></li>
+                            <li><a class="hover-opacity" href="#"><img src="img/icon-wa.svg" alt=""></a></li>
+                        </ul>
+                        <p><button type="button" class="btn btn-primary" onclick="toggleModal()">Связаться</button></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal-background-overlay" onclick="toggleModal()"></div>
+    <div class="modal-main">
+        <div class="modal-main__header p-4">
+            <button class="btn-close" type="button" onclick="toggleModal()"></button>
+        </div>
+        <div class="modal-main__body">
+            <div class="container">            
+                <div class="row g-4">
+                    <div class="col-lg-4">
+                        <div class="p-4">
+                            <p class="fz-32 fw-600">Напишите нам</p>
+                            <p class="fz-22">Кратко опишите свою задачу, и мы свяжемся с вами в кратчайшие сроки.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="p-4">
+                            <form action="#" method="post">
+                                <div class="mb-3">
+                                    <label class="form-label d-none">Имя</label>
+                                    <input type="text" class="form-control" placeholder="Имя">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label d-none">Телефон</label>
+                                    <input type="text" class="form-control" placeholder="Телефон">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label d-none">Email</label>
+                                    <input type="email" class="form-control" placeholder="Email">
+                                </div>
+                                <div class="mb-3">
+                                    <select class="form-select">
+                                        <option selected>Бюджет</option>
+                                        <option value="1">до 500 тыс. рублей</option>
+                                        <option value="2">до 1 млн рублей</option>
+                                        <option value="3">от 1 млн до 2 млн рублей</option>
+                                        <option value="3">более 5 млн рублей</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label d-none">Сообщение</label>
+                                    <textarea class="form-control" rows="3" placeholder="Сообщение"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary w-100">Отправить</button>
+                                <p class="fz-14 mt-3">Нажимая на кнопку, вы соглашаетесь с <a href="#privacyPolicy" data-bs-toggle="modal" data-bs-target="#privacyPolicy">Политикой персональных данных</a></p>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="p-4">
+                            <p class="fz-20 mb-5">Наш Email:<br>
+                                <a href="mailto:support@amdmedia.ru" class="fw-600">support@amdmedia.ru</a>
+                            </p>
+                            <p class="fz-20 fw-600 mb-5">Наш адрес:<br>
+                                117638 Россия, Москва,<br>
+                                Одесская улица, 2кС
+                            </p>
+                            <ul class="list-inline">
+                                <li><a class="hover-opacity" href="#"><img src="img/icon-vk.svg" alt=""></a></li>
+                                <li><a class="hover-opacity" href="#"><img src="img/icon-telegram.svg" alt=""></a></li>
+                                <li><a class="hover-opacity" href="#"><img src="img/icon-wa.svg" alt=""></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Politicy -->
+    <div class="modal fade" id="privacyPolicy" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p class="fs-2">Политика конфиденциальности</p>
+                <p>1. Принимая условия настоящего Соглашения, Пользователь даёт своё согласие Администрации сайта https://amdmedia.ru (далее — Администрация) на сбор, хранение и обработку своих персональных данных, указанных путём заполнения веб-форм на сайте https://amdmedia.ru (далее — Сайт). Под персональными данными понимается любая информация, относящаяся к прямо или косвенно определённому или определяемому физическому лицу (гражданину).</p>
+                <p>2. Пользователь также даёт своё согласие Администрации на отправку маркетинговых и информационных рассылок.</p>
+                <p>3. Основанием для обработки персональных данных являются: статья 24 Конституции РФ и статья 6 Федерального закона № 152-ФЗ «О персональных данных» с дополнениями и изменениями.</p>
+                <p>4. В ходе обработки с персональными данными будут совершены следующие операции: сбор, хранение, уточнение, передача, блокирование, удаление, уничтожение — все упомянутые действия только в целях, указанных в п. 2 настоящего Соглашения.</p>
+                <p>5. Администрация обязуется не передавать полученную от Пользователя информацию третьим лицам. Не считается нарушением предоставление персональных данных третьим лицам, действующим на основании договора с Сайтом, для исполнения обязательств перед Пользователем и только в рамках настоящего Соглашения.</p>
+                <p>6. Персональные данные хранятся и обрабатываются до завершения всех необходимых процедур либо до ликвидации Сайта.</p>
+                <p>7. Согласие может быть отозвано Пользователем или его представителем путём направления письменного заявления на Сайт по электронному адресу info@amdmedia.ru</p>
+                <p>8. Пользователь принимает политику использования файлов cookies, используемую на Сайте, и даёт согласие на получение информации об IP-адресе и иных сведений о его активности на Сайте. Данная информация не используется для установления личности Пользователя.</p>
+                <p>9. Администрация при обработке персональных данных принимает необходимые и достаточные организационные и технические меры для защиты персональных данных от неправомерного доступа к ним, а также от иных неправомерных действий в отношении персональных данных.</p>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/imask.js"></script>
+    <script src="js/glightbox.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
