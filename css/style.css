@@ -994,10 +994,6 @@ ul {
     transition: bottom .6s ease;
 }
 
-.overlay-item:hover .overlay-layer {
-    bottom: -100%;
-}
-
 .blog-item__meta>a {
     color: var(--color-black);
     margin-right: 10px;
