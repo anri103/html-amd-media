@@ -3,15 +3,7 @@
 
 })(jQuery);
 
-// MOBILE MENU
-
-const toggleMobileMenu = () => document.body.classList.toggle('offcanvas-menu');
-
-// MODAL
-
-const toggleModal = () => document.body.classList.toggle('open-main-modal');
-
-// Smooth Scroll JS
+// Smooth Scroll and Spy Scrolling JS
 
 const makeNavLinksSmooth = () => {
     const navLinks = document.querySelectorAll('.smooth-link');

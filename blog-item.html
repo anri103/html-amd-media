@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="favicon.png" />
     <title>AMD blog-item HTML</title>
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -16,82 +17,65 @@
 
 <body>
 
-    <!-- Мобильное меню -->
-    <div class="menu-background-overlay" onclick="toggleMobileMenu()"></div>
-    <div class="site-mobile-menu">
-        <div class="site-mobile-menu-header">
-            <button class="btn-close" type="button" onclick="toggleMobileMenu()"></button>
-        </div>
-        <div class="site-mobile-menu-body">
-            <div class="py-3">
-                <ul class="site-nav-wrap">
-                    <li class="nav-item">
-                        <a href="projects.html" class="nav-link">Проекты</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="uslugi.html" class="nav-link">Услуги</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="company.html" class="nav-link">Компания</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a href="blog.html" class="nav-link">Журнал</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="contacts.html" class="nav-link">Контакты</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="py-3">
-                <button type="button" class="btn btn-primary" onclick="toggleModal()">Связаться</button>
-            </div>
-            <div class="py-3">
-                <ul class="list-inline mb-0">
-                    <li><a class="hover-opacity" href="#"><img src="img/icon-vk.svg" alt=""></a></li>
-                    <li><a class="hover-opacity" href="#"><img src="img/icon-telegram.svg" alt=""></a></li>
-                    <li><a class="hover-opacity" href="#"><img src="img/icon-wa.svg" alt=""></a></li>
-                </ul>
-            </div>
-            <div class="py-3">
-                <ul class="nav flex-column">
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">+7 (495) 159-59-01</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">support@amdmedia.ru</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-    <!-- Основное меню сверху -->
+    <!-- Меню -->
     <header class="header">
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-expand-lg py-lg-4">
             <div class="container">
 
-                <a class="logo hover-opacity" href="index.html">
+                <a class="navbar-brand logo hover-opacity" href="index.html">
                     <img src="img/logo-black.svg" alt="">
                 </a>
 
-                <button class="btn navbar-toggler d-inline-block d-lg-none" type="button" onclick="toggleMobileMenu()">Меню</button>
+                <button type="button" class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
 
-                <div class="collapse navbar-collapse">
-                    <ul class="navbar-nav mx-auto">
-                        <li class="nav-item"><a class="nav-link" href="projects.html">Проекты</a></li>
-                        <li class="nav-item"><a class="nav-link" href="uslugi.html">Услуги</a></li>
-                        <li class="nav-item"><a class="nav-link" href="company.html">Компания</a></li>
-                        <li class="nav-item active"><a class="nav-link" href="blog.html">Журнал</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
-                    </ul>                    
-                </div>
-
-                <div class="d-none d-lg-flex align-items-center">
-                    <div class="mx-2 mx-xl-5">
-                        <button type="button" class="btn btn-primary" onclick="toggleModal()">Связаться</button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarNav">
+                    <div class="offcanvas-header justify-content-end">
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
-                    <div class="d-none d-xl-block py-2">
-                        <a class="fw-600 color-black color-red-hover" href="#">+7 (495) 159-59-01</a>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav mx-auto mb-5 mb-lg-0">
+                            <li class="nav-item"><a class="nav-link" href="projects.html">Проекты</a></li>
+                            <!-- Добавил и стилизовал выпадающее меню -->
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-current="page">Кейсы</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="uslugi.html">Сайты</a></li>
+                                    <li><a class="dropdown-item" href="uslugi.html">Продвижение</a></li>
+                                    <li><a class="dropdown-item" href="uslugi.html">Реклама</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="uslugi.html">Услуги</a></li>
+                            <li class="nav-item"><a class="nav-link" href="company.html">Компания</a></li>
+                            <li class="nav-item"><a class="nav-link active" href="blog.html">Журнал</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
+                        </ul>
+                        <div class="d-lg-none mb-5">
+                            <ul class="nav flex-column">
+                                <li class="nav-item"><a class="nav-link fz-20 fw-600 color-black color-red-hover" href="tel:+74951595901">+7 (495) 159-59-01</a></li>
+                                <li class="nav-item"><a class="nav-link fz-20 fw-600 color-black color-red-hover" href="mailto:support@amdmedia.ru">support@amdmedia.ru</a></li>
+                            </ul>
+                        </div>
+                        <div class="d-lg-none mb-5">
+                            <ul class="list-inline mb-0">
+                                <li><a class="hover-opacity" href="#"><img src="img/icon-vk.svg" alt="VK"></a></li>
+                                <li><a class="hover-opacity" href="#"><img src="img/icon-telegram.svg" alt="Telegram"></a></li>
+                                <li><a class="hover-opacity" href="#"><img src="img/icon-wa.svg" alt="WhatsApp"></a></li>
+                            </ul>
+                        </div>
+                        <div class="d-none d-lg-block">
+                            <div class="d-flex flex-wrap align-items-center">
+                                <a class="btn btn-primary btn-md mx-xl-4" data-bs-toggle="offcanvas" href="#offcanvasTop" role="button" aria-controls="offcanvasTop">Связаться</a>
+                                <a class="fw-600 color-black color-red-hover d-none d-xl-block" href="#">+7 (495) 159-59-01</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="offcanvas-header border-top">
+                        <a class="btn btn-primary btn-md w-100" data-bs-toggle="offcanvas" href="#offcanvasTop" role="button" aria-controls="offcanvasTop">Связаться</a>
                     </div>
                 </div>
 
@@ -99,12 +83,13 @@
         </nav>
     </header>
 
+    <!-- Контент -->
     <main class="main">
 
         <!-- Ссылка назад -->
         <section class="section section-back-link">
             <div class="container">
-                <a class="back-link color-black color-red-hover d-inline-flex align-items-center" href="#">
+                <a class="back-link color-black color-red-hover d-inline-flex align-items-center" href="#" onclick="window.history.back()">
                     <img class="flex-shrink-0 me-2" src="img/arrow-up-right.svg" alt="">
                     <span>Назад</span>
                 </a>
@@ -188,7 +173,7 @@
                                     <p class="fz-28">Подписка на рассылку</p>
                                     <form class="subscribe-form" action="#" method="post">
                                         <input type="email" class="form-control" placeholder="Ваш e-mail">
-                                        <button type="submit" class="btn btn-primary w-100">Отправить</button>
+                                        <button type="submit" class="btn btn-primary btn-md w-100">Отправить</button>
                                     </form>
                                 </div>
                             </div>
@@ -201,13 +186,13 @@
         <!-- Смотрите также -->
         <section class="section py-xl">
             <div class="container">
-                <div class="d-flex justify-content-between pb-50">
+                <div class="d-flex align-items-center justify-content-between pb-50">
                     <h2 class="m-0">Смотрите также</h2>
                     <a class="fz-22 text-uppercase" href="projects.html">Все проекты</a>
                 </div>
                 <div class="row g-4">
                     <div class="col-md-6">
-                        <div class="card project-item h-100">
+                        <div class="card card-project-item h-100">
                             <div class="pojects__item overlay-item">
                                 <a class="d-block w-100" href="project-item.html">
                                     <img class="w-100" src="img/projects/003.jpg" alt="">
@@ -225,7 +210,7 @@
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <div class="card project-item h-100">
+                        <div class="card card-project-item h-100">
                             <div class="pojects__item overlay-item">
                                 <a class="d-block w-100" href="project-item.html">
                                     <img class="w-100" src="img/projects/002.jpg" alt="">
@@ -248,6 +233,7 @@
 
     </main>
 
+    <!-- Футер -->
     <footer class="footer">
         <div class="container">
             <div class="row g-4">
@@ -313,27 +299,26 @@
                     <div class="footer__contacts">
                         <p class="h3">Контакты</p>
                         <p><a class="color-black color-red-hover" href="#">+7 (495) 134-25-25</a></p>
-                        <p><a href="#">support@startsite.studio</a></p>
+                        <p><a href="#">support@amdmedia.ru</a></p>
                         <ul class="list-inline">
                             <li><a class="hover-opacity" href="#"><img src="img/icon-vk.svg" alt=""></a></li>
                             <li><a class="hover-opacity" href="#"><img src="img/icon-telegram.svg" alt=""></a></li>
                             <li><a class="hover-opacity" href="#"><img src="img/icon-wa.svg" alt=""></a></li>
                         </ul>
-                        <p><button type="button" class="btn btn-primary" onclick="toggleModal()">Связаться</button></p>
+                        <p><a class="btn btn-primary btn-md" data-bs-toggle="offcanvas" href="#offcanvasTop" role="button" aria-controls="offcanvasTop">Связаться</a></p>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
 
-    <!-- Modal -->
-    <div class="modal-background-overlay" onclick="toggleModal()"></div>
-    <div class="modal-main">
-        <div class="modal-main__header p-4">
-            <button class="btn-close" type="button" onclick="toggleModal()"></button>
+    <!-- Modal after Action -->
+    <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop">
+        <div class="offcanvas-header justify-content-end">
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
-        <div class="modal-main__body">
-            <div class="container">            
+        <div class="offcanvas-body">
+            <div class="container">
                 <div class="row g-4">
                     <div class="col-lg-4">
                         <div class="p-4">
@@ -343,7 +328,7 @@
                     </div>
                     <div class="col-lg-4">
                         <div class="p-4">
-                            <form action="#" method="post">
+                            <form class="form-contact" action="#" method="post">
                                 <div class="mb-3">
                                     <label class="form-label d-none">Имя</label>
                                     <input type="text" class="form-control" placeholder="Имя">
@@ -369,8 +354,10 @@
                                     <label class="form-label d-none">Сообщение</label>
                                     <textarea class="form-control" rows="3" placeholder="Сообщение"></textarea>
                                 </div>
-                                <button type="submit" class="btn btn-primary w-100">Отправить</button>
-                                <p class="fz-14 mt-3">Нажимая на кнопку, вы соглашаетесь с <a href="#privacyPolicy" data-bs-toggle="modal" data-bs-target="#privacyPolicy">Политикой персональных данных</a></p>
+                                <button type="submit" class="btn btn-primary btn-md w-100">Отправить</button>
+                                <p class="fz-14 mt-3">Нажимая на кнопку, вы соглашаетесь с <a href="#privacyPolicy"
+                                        data-bs-toggle="modal" data-bs-target="#privacyPolicy">Политикой персональных
+                                        данных</a></p>
                             </form>
                         </div>
                     </div>
@@ -418,12 +405,14 @@
         </div>
     </div>
 
+    <!-- jQuery не используется, но добавлен для будущих интерактивностей -->
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/imask.js"></script>
     <script src="js/glightbox.min.js"></script>
     <script src="js/main.js"></script>
+
 </body>
 
 </html>
