@@ -29,7 +29,7 @@ const spyScrolling = () => {
         const scrollPos = document.documentElement.scrollTop || document.body.scrollTop;
 
         for (let s in sections)
-            if (sections.hasOwnProperty(s) && sections[s].offsetTop <= scrollPos) {
+            if (sections.hasOwnProperty(s) && sections[s].offsetTop <= scrollPos + 300) {
                 const id = sections[s].id;
                 document.querySelector('.sidebar-nav .active').classList.remove('active');
                 document.querySelector(`a[href*=${id}]`).parentNode.classList.add('active');
