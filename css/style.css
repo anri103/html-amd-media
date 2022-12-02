@@ -285,6 +285,7 @@ textarea {
 .btn-primary:hover {
     transform: translate(-0.25rem, -0.25rem);
     box-shadow: 0.25rem 0.25rem var(--color-black);
+    z-index: 5;
 }
 
 .btn-icon {
