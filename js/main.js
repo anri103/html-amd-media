@@ -1,35 +1,3 @@
-(function ($) {
-    'use strict';
-
-})(jQuery);
-
-// Back to Top Button
-//Get the button
-const mybutton = document.getElementById('back-top');
-
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function () {
-    scrollFunction();
-};
-
-function scrollFunction() {
-    if (
-        document.body.scrollTop > 400 ||
-        document.documentElement.scrollTop > 400
-    ) {
-        mybutton.classList.add('show');
-    } else {
-        mybutton.classList.remove('show');
-    }
-}
-// When the user clicks on the button, scroll to the top of the document
-mybutton.addEventListener('click', backToTop);
-
-function backToTop() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-}
-
 // Smooth Scroll and Spy Scrolling JS
 const makeNavLinksSmooth = () => {
     const navLinks = document.querySelectorAll('.smooth-link');
@@ -177,3 +145,24 @@ const lightboxBlogItem = GLightbox({
 //     document.getElementById('InputPhone1'), {
 //     mask: '+{7}(000)000-00-00'
 // });
+
+// Back to Top Button
+const mybutton = document.getElementById('back-top');
+window.onscroll = function () {
+    scrollFunction();
+};
+function scrollFunction() {
+    if (
+        document.body.scrollTop > 400 ||
+        document.documentElement.scrollTop > 400
+    ) {
+        mybutton.classList.add('visible');
+    } else {
+        mybutton.classList.remove('visible');
+    }
+}
+mybutton.addEventListener('click', backToTop);
+function backToTop() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}

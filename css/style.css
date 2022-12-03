@@ -754,7 +754,7 @@ ul {
     z-index: 9998;
 }
 
-.back-top.show {
+.back-top.visible {
     opacity: 1;
     visibility: visible;
 }
