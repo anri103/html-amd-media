@@ -569,6 +569,10 @@ ul {
     text-transform: uppercase;
 }
 
+.nav.flex-column .nav-link {
+    padding: 0.3rem 0;
+}
+
 /*//////////////////////////////////////////////////////////////////
 [ CONTENT ]*/
 
@@ -659,9 +663,6 @@ ul {
 
 .footer .nav-link {
     color: var(--color-grey);
-    padding-left: 0;
-    padding-top: 0.3rem;
-    padding-bottom: 0.3rem;
 }
 
 .footer .nav-link:hover,
@@ -838,9 +839,7 @@ ul {
 .sidebar-nav .nav-link {
     color: var(--color-black);
     font-weight: var(--fw-semibold);
-    padding-left: 0;
-    padding-top: 0.6rem;
-    padding-bottom: 0.6rem;
+    padding: 0.6rem 0 !important;
 }
 
 .sidebar-nav .nav-link:hover,
