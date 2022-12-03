@@ -296,7 +296,7 @@ textarea {
     height: 50px;
     padding: 0;
     border-radius: 50%;
-  }
+}
 
 .btn-md {
     padding: .5rem 1.5rem;
@@ -632,7 +632,7 @@ ul {
 .offcanvas-xxl {
     --bs-offcanvas-zindex: 1045;
     --bs-offcanvas-width: 21rem;
-    --bs-offcanvas-height: 70vh;
+    --bs-offcanvas-height: 100vh;
     --bs-offcanvas-padding-x: 1rem;
     --bs-offcanvas-padding-y: 1rem;
     --bs-offcanvas-color: ;
@@ -1209,20 +1209,17 @@ ul {
         font-size: .5rem;
     }
 
-    .position-lg-absolute {
-        position: absolute;
-    }
-
-    .text-lg-center {
-        text-align: center;
-    }
-
-    .text-lg-end {
-        text-align: right;
-    }
-
     .btn-md {
         padding: .75rem 2.5rem;
+    }
+
+    .offcanvas,
+    .offcanvas-lg,
+    .offcanvas-md,
+    .offcanvas-sm,
+    .offcanvas-xl,
+    .offcanvas-xxl {
+        --bs-offcanvas-height: 70vh;
     }
 
     .section-hero {
