@@ -114,7 +114,6 @@ const companyGallerySwiper = new Swiper('.companyGallerySwiper', {
     },
 });
 
-
 // Попап видео на index.html
 const lightboxMainVideo = GLightbox({
     selector: '.main-video-glightbox1'
@@ -147,22 +146,20 @@ const lightboxBlogItem = GLightbox({
 // });
 
 // Back to Top Button
-const mybutton = document.getElementById('back-top');
-window.onscroll = function () {
-    scrollFunction();
-};
-function scrollFunction() {
-    if (
-        document.body.scrollTop > 400 ||
-        document.documentElement.scrollTop > 400
-    ) {
-        mybutton.classList.add('visible');
+const scrollBtn = document.querySelector('.back-to-top');
+const btnVisibility = () => {
+    if (window.scrollY > 400) {
+        scrollBtn.classList.add('activated');
     } else {
-        mybutton.classList.remove('visible');
+        scrollBtn.classList.remove('activated');
     }
-}
-mybutton.addEventListener('click', backToTop);
-function backToTop() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-}
+};
+document.addEventListener('scroll', () => {
+    btnVisibility();
+});
+scrollBtn.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
