@@ -405,8 +405,8 @@ ul {
     margin-bottom: 1rem;
 }
 
-.sticky-top {
-    top: 20px;
+.sticky-top-col {
+    position: static;
 }
 
 .ff-main {
@@ -791,11 +791,11 @@ ul {
 [ MAIN CONTENT ]*/
 
 .main {
-    padding: 0 0 150px;
+    padding: 0 0 30px;
 }
 
 .main>*+* {
-    margin-top: 150px;
+    margin-top: 30px;
 }
 
 /*//////////////////////////////////////////////////////////////////
@@ -1296,6 +1296,13 @@ ul {
 
     .btn-md {
         padding: .75rem 2.5rem;
+    }
+
+    .sticky-top-col {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 20px;
+        z-index: 100;
     }
 
     .offcanvas,
