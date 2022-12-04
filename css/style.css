@@ -1532,6 +1532,11 @@ ul {
         font-weight: var(--fw-semibold);
     }
 
+    .navbar-nav .dropdown-item {
+        font-size: 1.5rem;
+        font-weight: var(--fw-semibold);
+    }
+
     .social-list>li>a {
         padding: 0.5rem 0;
     }
