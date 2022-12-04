@@ -26,6 +26,7 @@
   + PAGE PROJECTS.HTML
   + PAGE PROJECT-ITEM.HTML
   + PAGE COMPANY.HTML
+  + PAGE BLOG.HTML
   + PAGE CONTACTS.HTML
   + PAGE USLUGI.HTML
 
@@ -63,12 +64,11 @@ html {
 
 /* Custom Scrollbar */
 
-html::-webkit-scrollbar-track {
-    background-color: #F5F5F5;
+html::-webkit-scrollbar {
+    width: .5rem;
 }
 
-html::-webkit-scrollbar {
-    width: 6px;
+html::-webkit-scrollbar-track {
     background-color: #F5F5F5;
 }
 
@@ -946,23 +946,49 @@ ul {
 }
 
 .card {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    min-width: 0;
-    background-color: var(--color-white);
-    background-clip: border-box;
-    border: none;
-    border-radius: 0;
+    --bs-card-spacer-y: 1rem;
+    --bs-card-spacer-x: 1rem;
+    --bs-card-title-spacer-y: 0.5rem;
+    --bs-card-border-width: 1px;
+    --bs-card-border-color: transparent;
+    --bs-card-border-radius: 0;
+    --bs-card-box-shadow: ;
+    --bs-card-inner-border-radius: calc(0.375rem - 1px);
+    --bs-card-cap-padding-y: 0.5rem;
+    --bs-card-cap-padding-x: 1rem;
+    --bs-card-cap-bg: rgba(0, 0, 0, 0.03);
+    --bs-card-cap-color: ;
+    --bs-card-height: ;
+    --bs-card-color: ;
+    --bs-card-bg: #fff;
+    --bs-card-img-overlay-padding: 1rem;
+    --bs-card-group-margin: 0.75rem;
+    word-wrap: normal;
 }
 
 .activitySwiper .swiper-slide {
-    width: 360px;
     height: auto;
 }
 
-.pe-sm-200 {
-    padding-right: 100px;
+.card-activities {
+    background-image: url(../img/activity/bg-project.png);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card-activities-body {
+    --bs-card-spacer-y: 2rem;
+}
+
+.activities-img {
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+}
+
+.activities-text {
+    margin-right: -1rem;
 }
 
 .pojects__item {
@@ -1078,8 +1104,8 @@ ul {
     padding-bottom: 0;
 }
 
-.projectSwiper .swiper-slide {
-    width: 870px;
+.projectSwiper .swiper-slide img {
+    width: 100%;
 }
 
 .worksSwiper {
@@ -1107,16 +1133,23 @@ ul {
     transition-delay: .1s;
 }
 
+.worksSwiper .swiper-slide img {
+    width: 100%;
+}
+
 /*//////////////////////////////////////////////////////////////////
 [ PAGE COMPANY.HTML ]*/
 
-.companyGallerySwiper {
+.teamSwiper {
     padding-bottom: 50px;
 }
 
-.companyGallerySwiper .swiper-slide {
-    width: 350px;
+.teamSwiper .swiper-slide img {
+    width: 100%;
 }
+
+/*//////////////////////////////////////////////////////////////////
+[ PAGE BLOG.HTML ]*/
 
 .blog-sidebar>.blog-sidebar-widget {
     padding-top: 35px;
@@ -1198,26 +1231,9 @@ ul {
 /*//////////////////////////////////////////////////////////////////
 [ MEDIA ]*/
 
-@media (min-width: 576px) {
+@media (min-width: 576px) {}
 
-    .activitySwiper .swiper-slide {
-        width: 461px;
-    }
-
-    .companyGallerySwiper .swiper-slide {
-        width: 870px;
-    }
-
-    .pe-sm-200 {
-        padding-right: 200px;
-    }
-}
-
-@media (min-width: 768px) {
-    .activitySwiper .card {
-        min-height: 330px;
-    }
-}
+@media (min-width: 768px) {}
 
 @media (min-width: 992px) {
 
@@ -1528,18 +1544,6 @@ ul {
     .btn-rounded-interactive {
         width: 295px;
         height: 295px;
-    }
-
-    .activitySwiper .swiper-slide {
-        width: 751px;
-    }
-
-    .activitySwiper .card {
-        min-height: 500px;
-    }
-
-    .pe-sm-200 {
-        padding-right: 300px;
     }
 
     .overlay-layer>a>img {

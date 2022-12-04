@@ -1,4 +1,25 @@
-// Smooth Scroll and Spy Scrolling JS
+//////////////////////////////////////////////////////////////////
+// [ Back to Top Button ]
+const scrollBtn = document.querySelector('.back-to-top');
+const btnVisibility = () => {
+    if (window.scrollY > 400) {
+        scrollBtn.classList.add('activated');
+    } else {
+        scrollBtn.classList.remove('activated');
+    }
+};
+document.addEventListener('scroll', () => {
+    btnVisibility();
+});
+scrollBtn.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
+
+//////////////////////////////////////////////////////////////////
+// [ Smooth Scroll ]
 const makeNavLinksSmooth = () => {
     const navLinks = document.querySelectorAll('.smooth-link');
 
@@ -16,6 +37,8 @@ const makeNavLinksSmooth = () => {
 }
 makeNavLinksSmooth();
 
+//////////////////////////////////////////////////////////////////
+// [ Spy Scrolling ]
 const spyScrolling = () => {
     const sections = document.querySelectorAll('.section-spy');
 
@@ -32,19 +55,33 @@ const spyScrolling = () => {
 }
 spyScrolling();
 
-// Слайдер на странице index.html
+//////////////////////////////////////////////////////////////////
+// [ Swiper ]
 const activitySwiper = new Swiper('.activitySwiper', {
-    slidesPerView: 'auto',
-    spaceBetween: 30,
+    slidesPerView: 1.15,
+    spaceBetween: 15,
     freeMode: true,
     mousewheel: true,
     scrollbar: {
         el: '.swiper-scrollbar',
         hide: true,
     },
+    breakpoints: {
+        768: {
+            slidesPerView: 1.5,
+            spaceBetween: 20,
+        },
+        992: {
+            slidesPerView: 1.75,
+            spaceBetween: 30,
+        },
+        1200: {
+            slidesPerView: 2.15,
+            spaceBetween: 30,
+        },
+    },
 });
 
-// Слайдер на странице index.html
 const testimonialSwiper = new Swiper('.testimonialSwiper', {
     slidesPerView: 1,
     spaceBetween: 30,
@@ -59,22 +96,34 @@ const testimonialSwiper = new Swiper('.testimonialSwiper', {
     },
 });
 
-// Слайдер на странице project-item.html
 const projectSwiper = new Swiper('.projectSwiper', {
-    slidesPerView: 'auto',
-    spaceBetween: 30,
+    slidesPerView: 1.25,
+    spaceBetween: 15,
     freeMode: true,
     mousewheel: true,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
     scrollbar: {
         el: '.swiper-scrollbar',
         hide: true,
     },
+    breakpoints: {
+        992: {
+            slidesPerView: 1.5,
+            spaceBetween: 30,
+        },
+        1600: {
+            slidesPerView: 1.75,
+            spaceBetween: 30,
+        },
+    },
 });
 
-// Слайдер на странице project-item.html
 const worksSwiper = new Swiper('.worksSwiper', {
-    slidesPerView: 3,
-    spaceBetween: 10,
+    slidesPerView: 2.05,
+    spaceBetween: 15,
     centeredSlides: true,
     loop: true,
     autoplay: {
@@ -84,82 +133,62 @@ const worksSwiper = new Swiper('.worksSwiper', {
     },
     breakpoints: {
         992: {
-            slidesPerView: 3,
-            spaceBetween: 20,
-        },
-        1200: {
-            slidesPerView: 4,
-            spaceBetween: 30,
-        },
-        1500: {
-            slidesPerView: 6,
+            slidesPerView: 4.5,
             spaceBetween: 30,
         },
     },
 });
 
-// Слайдер на странице company.html
-const companyGallerySwiper = new Swiper('.companyGallerySwiper', {
-    slidesPerView: 'auto',
-    spaceBetween: 20,
+const teamSwiper = new Swiper('.teamSwiper', {
+    slidesPerView: 1.25,
+    spaceBetween: 15,
     freeMode: true,
+    mousewheel: true,
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
-    pagination: {
-        el: '.swiper-pagination',
-        dynamicBullets: true,
-        clickable: true,
+    scrollbar: {
+        el: '.swiper-scrollbar',
+        hide: true,
+    },
+    breakpoints: {
+        992: {
+            slidesPerView: 1.5,
+            spaceBetween: 30,
+        },
+        1600: {
+            slidesPerView: 1.75,
+            spaceBetween: 30,
+        },
     },
 });
 
-// Попап видео на index.html
+//////////////////////////////////////////////////////////////////
+// [ GLightbox ]
 const lightboxMainVideo = GLightbox({
-    selector: '.main-video-glightbox1'
+    selector: '.glightbox-video-01'
 });
 
-// Попап видеоотзывов
 const lightboxTestimonial = GLightbox({
-    selector: '.testimonial-glightbox1'
+    selector: '.glightbox-testimonial-01'
 });
 
-// Попап галереи на project-item.html
 const lightboxProjectItem = GLightbox({
-    selector: '.project-item-glightbox1'
+    selector: '.glightbox-project-01'
 });
 
-// Попап галереи на company.html
 const lightboxCompany = GLightbox({
-    selector: '.glightbox1'
+    selector: '.glightbox-team-01'
 });
 
-// Попап изображений на blog-item.html
 const lightboxBlogItem = GLightbox({
-    selector: '.blog-item-glightbox1'
+    selector: '.glightbox-post-01'
 });
 
-// PHONE MASK
-// const phoneMask = IMask(
-//     document.getElementById('InputPhone1'), {
-//     mask: '+{7}(000)000-00-00'
-// });
-
-// Back to Top Button
-const scrollBtn = document.querySelector('.back-to-top');
-const btnVisibility = () => {
-    if (window.scrollY > 400) {
-        scrollBtn.classList.add('activated');
-    } else {
-        scrollBtn.classList.remove('activated');
-    }
-};
-document.addEventListener('scroll', () => {
-    btnVisibility();
-});
-scrollBtn.addEventListener('click', () => {
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-    });
+//////////////////////////////////////////////////////////////////
+// [ PHONE MASK ]
+const phoneMask = IMask(
+    document.getElementById('InputPhone1'), {
+    mask: '+{7}(000)000-00-00'
 });
