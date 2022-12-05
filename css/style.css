@@ -1026,8 +1026,8 @@ ul {
     margin-bottom: 35px;
 }
 
-.testimonialSwiper-next,
-.testimonialSwiper-prev {
+.custom-next,
+.custom-prev {
     position: absolute;
     top: 50%;
     width: 72px;
@@ -1039,27 +1039,27 @@ ul {
     justify-content: center;
 }
 
-.testimonialSwiper-next {
+.custom-next {
     right: 10px;
     left: auto;
 }
 
-.testimonialSwiper-prev {
+.custom-prev {
     left: 10px;
     right: auto;
 }
 
-.testimonialSwiper-next.swiper-button-disabled,
-.testimonialSwiper-prev.swiper-button-disabled {
+.custom-next.swiper-button-disabled,
+.custom-prev.swiper-button-disabled {
     opacity: 0;
 }
 
-.testimonialSwiper-next.swiper-button-next:after,
-.testimonialSwiper-prev.swiper-button-prev:after {
+.custom-next.swiper-button-next:after,
+.custom-prev.swiper-button-prev:after {
     content: none;
 }
 
-.testimonialSwiper-pagination .swiper-pagination-bullet-active {
+.custom-pagination .swiper-pagination-bullet-active {
     background-color: var(--color-black);
 }
 
