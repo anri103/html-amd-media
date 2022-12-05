@@ -293,6 +293,24 @@ textarea {
     z-index: 5;
 }
 
+.btn-secondary {
+    --bs-btn-color: var(--color-black);
+    --bs-btn-bg: transparent;
+    --bs-btn-border-color: var(--color-black);
+    --bs-btn-hover-color: var(--color-white);
+    --bs-btn-hover-bg: var(--color-red);
+    --bs-btn-hover-border-color: var(--color-red);
+    --bs-btn-focus-shadow-rgb: 226, 3, 56;
+    --bs-btn-active-color: var(--color-white);
+    --bs-btn-active-bg: var(--color-red);
+    --bs-btn-active-border-color: var(--color-red);
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: var(--color-white);
+    --bs-btn-disabled-bg: var(--color-grey);
+    --bs-btn-disabled-border-color: var(--color-grey);
+    transition: transform .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
 .btn-icon {
     display: inline-flex;
     justify-content: center;
@@ -552,6 +570,10 @@ ul {
 
 .pb-50 {
     padding-bottom: 50px;
+}
+
+.z-index-130 {
+    z-index: 130;
 }
 
 .nav {
