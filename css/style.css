@@ -621,11 +621,11 @@ ul {
     left: 0;    
     opacity: 1;
     z-index: 1030;
-    transform: translateY(0%);
     transition: all 0.4s ease-in-out;
 }
 
-.headroom--unpinned .header-fixed {
+.headroom--unpinned .header-fixed,
+.offcanvas-push .header-fixed {
     opacity: 0;
     transform: translateY(-100%);
 }
