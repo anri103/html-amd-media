@@ -1,4 +1,19 @@
 //////////////////////////////////////////////////////////////////
+// [ Headroom ]
+(function () {
+    const body = document.querySelector('body');
+    const headroom = new Headroom(body, {
+        tolerance: {
+            down: 10,
+            up: 20
+        },
+        offset: 15
+    });
+    headroom.init();
+})();
+
+
+//////////////////////////////////////////////////////////////////
 // [ Back to Top Button ]
 const scrollBtn = document.querySelector('.back-to-top');
 const btnVisibility = () => {
