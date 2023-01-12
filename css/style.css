@@ -839,11 +839,15 @@ ul {
     opacity: .9;
 }
 
+.btn-close:focus {
+    box-shadow: none;
+}
+
 /*//////////////////////////////////////////////////////////////////
 [ MAIN CONTENT ]*/
 
 .main {
-    padding: 0 0 30px;
+    padding: 4rem 0 2rem;
 }
 
 .main>*+* {
