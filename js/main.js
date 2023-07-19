@@ -14,17 +14,17 @@
 
 //////////////////////////////////////////////////////////////////
 // [ Headroom ]
-(function () {
-    const body = document.querySelector('body');
-    const headroom = new Headroom(body, {
-        tolerance: {
-            down: 10,
-            up: 20
-        },
-        offset: 15
-    });
-    headroom.init();
-})();
+// (function () {
+//     const body = document.querySelector('body');
+//     const headroom = new Headroom(body, {
+//         tolerance: {
+//             down: 10,
+//             up: 20
+//         },
+//         offset: 15
+//     });
+//     headroom.init();
+// })();
 
 
 //////////////////////////////////////////////////////////////////
