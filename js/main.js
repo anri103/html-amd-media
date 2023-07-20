@@ -90,7 +90,6 @@ scrollBtn.addEventListener('click', () => {
 //     slidesPerView: 1.15,
 //     spaceBetween: 15,
 //     freeMode: true,
-//     mousewheel: true,
 //     scrollbar: {
 //         el: '.swiper-scrollbar',
 //         hide: true,
@@ -129,7 +128,6 @@ const projectSwiper = new Swiper('.projectSwiper', {
     slidesPerView: 1.25,
     spaceBetween: 15,
     freeMode: true,
-    mousewheel: true,
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
@@ -172,7 +170,6 @@ const teamSwiper = new Swiper('.teamSwiper', {
     slidesPerView: 1.25,
     spaceBetween: 15,
     freeMode: true,
-    mousewheel: true,
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
@@ -194,7 +191,7 @@ const teamSwiper = new Swiper('.teamSwiper', {
 });
 
 const blogSwiper = new Swiper('.blogSwiper', {
-    slidesPerView: 1.25,
+    slidesPerView: 1.15,
     spaceBetween: 15,
     freeMode: true,
     navigation: {
@@ -206,6 +203,10 @@ const blogSwiper = new Swiper('.blogSwiper', {
         clickable: true,
     },
     breakpoints: {
+        768: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+        },
         992: {
             slidesPerView: 4,
             spaceBetween: 30,
@@ -219,25 +220,25 @@ const blogSwiper = new Swiper('.blogSwiper', {
 
 //////////////////////////////////////////////////////////////////
 // [ GLightbox ]
-const lightboxMainVideo = GLightbox({
-    selector: '.glightbox-video-01'
-});
+// const lightboxMainVideo = GLightbox({
+//     selector: '.glightbox-video-01'
+// });
 
-const lightboxTestimonial = GLightbox({
-    selector: '.glightbox-testimonial-01'
-});
+// const lightboxTestimonial = GLightbox({
+//     selector: '.glightbox-testimonial-01'
+// });
 
-const lightboxProjectItem = GLightbox({
-    selector: '.glightbox-project-01'
-});
+// const lightboxProjectItem = GLightbox({
+//     selector: '.glightbox-project-01'
+// });
 
-const lightboxCompany = GLightbox({
-    selector: '.glightbox-team-01'
-});
+// const lightboxCompany = GLightbox({
+//     selector: '.glightbox-team-01'
+// });
 
-const lightboxBlogItem = GLightbox({
-    selector: '.glightbox-post-01'
-});
+// const lightboxBlogItem = GLightbox({
+//     selector: '.glightbox-post-01'
+// });
 
 
 
