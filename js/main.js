@@ -218,6 +218,28 @@ const blogSwiper = new Swiper('.blogSwiper', {
     },
 });
 
+const marqueeSwiper = new Swiper('.marqueeSwiper', {
+    slidesPerView: 2,
+    spaceBetween: 15,
+    loop: true,
+    freeMode: true,
+    speed: 5000,
+    autoplay: {
+        delay: 1,
+        disableOnInteraction: false,
+    },
+    breakpoints: {
+        768: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+        },
+        992: {
+            slidesPerView: 5,
+            spaceBetween: 50,
+        },
+    },
+});
+
 //////////////////////////////////////////////////////////////////
 // [ GLightbox ]
 // const lightboxMainVideo = GLightbox({
@@ -252,13 +274,13 @@ const blogSwiper = new Swiper('.blogSwiper', {
 var maskPhone = document.querySelectorAll('.maskPhone')
 var maskDate = document.querySelectorAll('.maskDate')
 
-maskPhone.forEach(function(el) {
+maskPhone.forEach(function (el) {
     IMask(el, {
         mask: '+{7}(000)000-00-00'
     });
 });
 
-maskDate.forEach(function(el) {
+maskDate.forEach(function (el) {
     IMask(el, {
         mask: Date,
         min: new Date(1900, 0, 1),
@@ -275,9 +297,9 @@ Fancybox.bind("[data-fancybox]", {
     },
     Toolbar: {
         display: {
-          left: [],
-          middle: ["close"],
-          right: [],
+            left: [],
+            middle: ["close"],
+            right: [],
         },
     },
 });
