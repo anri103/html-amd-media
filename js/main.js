@@ -26,15 +26,27 @@
 //     headroom.init();
 // })();
 
+//////////////////////////////////////////////////////////////////
+// [ Fixed header ]
+window.onscroll = function() {
+    const windowScroll = window.scrollY;
+	const fixedMenu = document.querySelector('.header');
+    if(windowScroll > 200) {
+        fixedMenu.classList.add('js-fixed');
+    }
+    else {
+        fixedMenu.classList.remove('js-fixed');
+    }
+}
 
 //////////////////////////////////////////////////////////////////
 // [ Back to Top Button ]
 const scrollBtn = document.querySelector('.back-to-top');
 const btnVisibility = () => {
     if (window.scrollY > 400) {
-        scrollBtn.classList.add('activated');
+        scrollBtn.classList.add('js-active');
     } else {
-        scrollBtn.classList.remove('activated');
+        scrollBtn.classList.remove('js-active');
     }
 };
 document.addEventListener('scroll', () => {
@@ -86,30 +98,6 @@ scrollBtn.addEventListener('click', () => {
 
 //////////////////////////////////////////////////////////////////
 // [ Swiper ]
-// const activitySwiper = new Swiper('.activitySwiper', {
-//     slidesPerView: 1.15,
-//     spaceBetween: 15,
-//     freeMode: true,
-//     scrollbar: {
-//         el: '.swiper-scrollbar',
-//         hide: true,
-//     },
-//     breakpoints: {
-//         768: {
-//             slidesPerView: 1.5,
-//             spaceBetween: 20,
-//         },
-//         992: {
-//             slidesPerView: 1.75,
-//             spaceBetween: 30,
-//         },
-//         1200: {
-//             slidesPerView: 2.15,
-//             spaceBetween: 30,
-//         },
-//     },
-// });
-
 const testimonialSwiper = new Swiper('.testimonialSwiper', {
     slidesPerView: 1,
     spaceBetween: 30,
@@ -204,14 +192,14 @@ const blogSwiper = new Swiper('.blogSwiper', {
     },
     breakpoints: {
         768: {
-            slidesPerView: 3,
+            slidesPerView: 2,
             spaceBetween: 30,
         },
         992: {
-            slidesPerView: 4,
+            slidesPerView: 3,
             spaceBetween: 30,
         },
-        1600: {
+        1200: {
             slidesPerView: 4,
             spaceBetween: 72,
         },

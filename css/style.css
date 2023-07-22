@@ -377,7 +377,7 @@ textarea {
     z-index: 999;
 }
 
-.back-to-top.activated {
+.back-to-top.js-active {
     bottom: 1rem;
     opacity: 1;
     visibility: visible;
@@ -519,6 +519,16 @@ img {
     background-size: cover;
 }
 
+.bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
 .color-black {
     color: var(--color-black);
 }
@@ -599,27 +609,22 @@ img {
 
 .header {
     background-color: rgba(255, 255, 255, 0.985);
+    transition: all 0.4s ease-in-out;
 }
 
-.header-fixed {
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;    
-    opacity: 1;
-    z-index: 1030;
-    transition: all 0.4s ease-in-out;
+.js-fixed {
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
 }
 
 /* Стили для скрипта headroom.js */
 
-/* .headroom--unpinned .header-fixed,
-.offcanvas-push .header-fixed {
+/* .headroom--unpinned .js-fixed,
+.offcanvas-push .js-fixed {
     opacity: 0;
     transform: translateY(-100%);
 }
 
-.headroom--not-top.headroom--pinned .header-fixed {
+.headroom--not-top.headroom--pinned .js-fixed {
     border-bottom: 1px solid #cccccc52;
 } */
 
@@ -644,8 +649,7 @@ img {
     --bs-navbar-toggler-border-radius: 0.375rem;
     --bs-navbar-toggler-focus-width: 0;
     --bs-navbar-toggler-transition: box-shadow 0.15s ease-in-out;
-    --amd-navbar-height: 150px;
-    height: var(--amd-navbar-height);
+    height: 150px;
 }
 
 .navbar-nav {
@@ -678,8 +682,9 @@ img {
 @media (min-width: 992px) {
 
     .navbar {
-        --amd-navbar-height: 100px;
+        height: 100px;
     }
+
     .navbar-nav {
         gap: 32px;
     }
@@ -824,8 +829,7 @@ img {
 [ CONTENT ]*/
 
 .main {
-    padding-top: var(--amd-navbar-height);
-    padding-bottom: 106px;
+    padding: 0 0 106px;
 }
 
 .main > .section {
@@ -890,46 +894,70 @@ img {
 
 .section-hero {
     position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 211px 0 66px;
-    /* height: 100vh; */
+    padding: 59px 0;
 }
 
 .hero-title {
-    margin-bottom: 77px;
+    margin-bottom: 46px;
 }
 
 .hero-title h1 {
-    font-size: 44px;
+    font-size: 32px;
     font-weight: 400;
     letter-spacing: 2%;
-    margin-bottom: 30px;
+    margin-bottom: 46px;
 }
 
 .hero-title .hero-subtitle {
-    font-size: 32px;
+    font-size: 24px;
     font-weight: 400;
 }
 
 .hero-activities {
     max-width: 1026px;
-    margin-bottom: 112px;
+    margin-bottom: 46px;
 }
 
-.hero-activities .activities-title {
+.activities-card {
+    --bs-link-color: #120E1E;
+    position: relative;
+    display: block;
+    height: 100%;
+    padding: 32px;
+    transition: all 0.3s ease;
+}
+
+.activities-card:hover {
+    background: linear-gradient(279.46deg, #FFFFFF -7.93%, rgba(255, 255, 255, 0.52) 62.76%);
+}
+
+.activities-card.last-card:hover {
+    background: linear-gradient(276.49deg, #92F2DA -4.2%, rgba(255, 255, 255, 0.52) 90.67%);
+}
+
+.activities-card .activities-title {
     font-size: 32px;
     font-weight: 400;
     letter-spacing: 2%;
     margin-bottom: 10px;
 }
 
-.hero-activities .activities-desc {
+.activities-card .activities-desc {
     font-size: 20px;
     font-weight: 400;
     letter-spacing: 2%;
     margin-bottom: 0;
+}
+
+.activities-card .card-arrow {
+    position: absolute;
+    bottom: 0;
+    right: 24px;
+    transition: transform 0.3s ease;
+}
+
+.activities-card:hover .card-arrow {
+    transform: translate(10px, -10px);
 }
 
 .hero-advantages {
@@ -942,15 +970,52 @@ img {
 }
 
 .item-advantage p {
-    font-size: 50px;
+    font-size: 32px;
     font-weight: 600;
     margin-bottom: 0;
 }
 
 .item-advantage span {
-    font-size: 20px;
+    font-size: 14px;
     font-weight: 400;
     line-height: 1.25;
+}
+
+@media (min-width: 992px) {
+
+    .section-hero {
+        padding: 111px 0 66px;
+    }
+
+    .hero-title {
+        margin-bottom: 77px;
+    }
+
+    .hero-title h1 {
+        font-size: 44px;
+        margin-bottom: 30px;
+    }
+
+    .hero-title .hero-subtitle {
+        font-size: 32px;
+    }
+
+    .hero-activities {
+        margin-bottom: 112px;
+    }
+
+    .activities-card .card-arrow {
+        bottom: 12px;
+        right: 24px;
+    }
+
+    .item-advantage p {
+        font-size: 50px;
+    }
+
+    .item-advantage span {
+        font-size: 20px;
+    }
 }
 
 /*------------------------------------------------------------------
@@ -1265,15 +1330,19 @@ img {
     margin-right: 3px;
 }
 
-.project-card .card-arrow {
-    position: absolute;
-    bottom: 42px;
-    right: 24px;
+.card-arrow {
+    display: block;
     width: 29px;
     height: 29px;
     background-image: url("data:image/svg+xml,%3Csvg width='29' height='29' viewBox='0 0 29 29' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M25.9583 0.75H3.04167C1.66667 0.75 0.75 1.66667 0.75 3.04167C0.75 4.41667 1.66667 5.33333 3.04167 5.33333H20.4583L1.4375 24.3542C0.520834 25.2708 0.520834 26.6458 1.4375 27.5625C2.35417 28.4792 3.72917 28.4792 4.64583 27.5625L23.6667 8.54167V25.9583C23.6667 27.3333 24.5833 28.25 25.9583 28.25C27.3333 28.25 28.25 27.3333 28.25 25.9583V3.04167C28.25 1.66667 27.3333 0.75 25.9583 0.75Z' fill='%23120E1E'/%3E%3C/svg%3E%0A");
     background-position: center;
     background-repeat: no-repeat;
+}
+
+.project-card .card-arrow {
+    position: absolute;
+    bottom: 42px;
+    right: 24px;
     opacity: 1;
     transition: transform 0.3s ease, opacity 0.3s ease;
 }

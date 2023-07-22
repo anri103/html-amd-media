@@ -19,7 +19,7 @@
 <body>
 
     <!-- Меню -->
-    <header class="header header-fixed">
+    <header class="header sticky-top">
         <nav class="navbar">
             <div class="container">
 
@@ -55,8 +55,11 @@
 
         <!-- Первый экран -->
         <section class="section section-hero">
-            <div class="container">
-                <div class="position-relative">
+            <video class="bg-video" poster="https://sb.vox1.net/video/poligonBG.jpg" playsinline autoplay muted loop>
+                <source src="video/bg-hero-01.mp4" type="video/mp4">
+            </video>
+            <div class="position-relative">
+                <div class="container">
 
                     <div class="hero-title px-lg-5">
                         <h1><span>Мы —</span><span>интегратор цифровых решений</span></h1>
@@ -65,54 +68,56 @@
 
                     <div class="hero-activities">
                         <div class="row g-0">
-                            <div class="col-lg-6">
-                                <div class="p-lg-5">
+                            <div class="col-md-6">
+                                <a class="activities-card p-lg-5" href="#">
                                     <p class="activities-title">Разработка</p>
                                     <p class="activities-desc">Создание сайтов любой сложности<br> Интеграция систем и Дизайн</p>
-                                </div>
+                                    <div class="card-arrow"></div>
+                                </a>
                             </div>
-                            <div class="col-lg-6">
-                                <div class="p-lg-5">
+                            <div class="col-md-6">
+                                <a class="activities-card last-card p-lg-5" href="#">
                                     <p class="activities-title">Продвижение</p>
                                     <p class="activities-desc">Поисковая оптимизация<br> Контекстная реклама, маркетплейсы и SMM</p>
-                                </div>
+                                    <div class="card-arrow"></div>
+                                </a>
                             </div>
                         </div>
                     </div>
 
                     <div class="hero-advantages">
-                        <div class="row">
-                            <div class="col-6 col-lg-2">
+                        <div class="row gy-3 row-cols-2 row-cols-md-3 row-cols-lg-3 row-cols-xl-6">
+                            <div class="col">
                                 <div class="item-advantage">
                                     <p>200+</p>
                                     <span>успешных проектов</span>
                                 </div>
                             </div>
-                            <div class="col-6 col-lg-2">
+                            <div class="col">
                                 <div class="item-advantage">
                                     <p>&#62;1 млн</p>
                                     <span>человек используют<br> наши сервисы</span>
                                 </div>
                             </div>
-                            <div class="col-6 col-lg-2">
+                            <div class="col">
                                 <div class="item-advantage">
                                     <p>500+</p>
                                     <span>клиентов нам доверяют</span>
                                 </div>
                             </div>
-                            <div class="col-6 col-lg-2">
+                            <div class="col">
                                 <div class="item-advantage">
                                     <p>10</p>
                                     <span>лет на рынке</span>
                                 </div>
                             </div>
-                            <div class="col-6 col-lg-2">
+                            <div class="col">
                                 <div class="item-advantage">
                                     <p>45 000+</p>
                                     <span>решенных задач</span>
                                 </div>
                             </div>
-                            <div class="col-6 col-lg-2">
+                            <div class="col">
                                 <div class="item-advantage">
                                     <p>&#62;50</p>
                                     <span>специалистов в штате</span>
@@ -409,7 +414,7 @@
                                         <span>22.06.2023</span>
                                     </div>
                                     <h3 class="card-title">
-                                        <a href="blog-item.html">Заказать настройку контекстной рекламы яндекс директ</a>
+                                        <a href="blog-item.html">Короткий заголовок</a>
                                     </h3>
                                     <div class="card-description">
                                         <p class="mb-0">Для чего следует заказать контекстную рекламу Яндекс.Директ?</p>
@@ -440,7 +445,7 @@
                                         <span>22.06.2023</span>
                                     </div>
                                     <h3 class="card-title">
-                                        <a href="blog-item.html">Заказать настройку контекстной рекламы яндекс директ</a>
+                                        <a href="blog-item.html">Заказать настройку контекстной рекламы яндекс директ самый длинный заголовок</a>
                                     </h3>
                                     <div class="card-description">
                                         <p class="mb-0">Для чего следует заказать контекстную рекламу Яндекс.Директ?</p>
