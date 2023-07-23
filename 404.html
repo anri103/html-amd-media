@@ -6,77 +6,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="favicon.png" />
-    <title>AMD 404 HTML</title>
+    <title>404</title>
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/boxicons.min.css"/>
+    <link rel="stylesheet" href="css/boxicons.min.css" />
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
-    <link rel="stylesheet" href="css/glightbox.min.css">
+    <link rel="stylesheet" href="css/fancybox.css">
     <link rel="stylesheet" href="css/style.css">
 
 </head>
 
 <body>
 
-    <!-- Меню -->
-    <header class="header">
-        <nav class="navbar navbar-expand-lg py-lg-4">
+    <header class="header sticky-top">
+        <nav class="navbar">
             <div class="container">
 
-                <a class="navbar-brand logo hover-opacity" href="index.html">
-                    <img src="img/logo-black.svg" alt="">
-                </a>
+                <div class="navbar-block-logo">
+                    <a class="site-logo hover-opacity" href="index.html">
+                        <img src="img/logo-black.svg" alt="AMD logo">
+                    </a>
+                </div>
 
-                <button type="button" class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
+                <div class="navbar-block-contacts">
+                    <a class="navbar-btn btn btn-secondary btn-md" data-bs-toggle="offcanvas" href="#offcanvasTop" role="button" aria-controls="offcanvasTop">Заказать проект</a>
+                    <a class="fs-20 fw-600 link-black" href="tel:+74951595901">+7 (495) 159-59-01</a>
+                </div>
 
-                <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarNav">
-                    <div class="offcanvas-header justify-content-end">
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                        <ul class="navbar-nav mx-auto mb-5 mb-lg-0">
+                <div class="navbar-block-menu">
+                    <div class="scrollable-container">
+                        <ul class="navbar-nav scrollable-wrapper">
                             <li class="nav-item"><a class="nav-link" href="projects.html">Проекты</a></li>
-                            <!-- Добавил и стилизовал выпадающее меню -->
-                            <li class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-current="page">Кейсы</a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="uslugi.html">Сайты</a></li>
-                                    <li><a class="dropdown-item" href="uslugi.html">Продвижение</a></li>
-                                    <li><a class="dropdown-item" href="uslugi.html">Реклама</a></li>
-                                </ul>
-                            </li>
                             <li class="nav-item"><a class="nav-link" href="uslugi.html">Услуги</a></li>
-                            <li class="nav-item"><a class="nav-link" href="company.html">Компания</a></li>
+                            <li class="nav-item"><a class="nav-link" href="about.html">О нас</a></li>
                             <li class="nav-item"><a class="nav-link" href="blog.html">Журнал</a></li>
                             <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
                         </ul>
-                        <div class="d-lg-none mb-5">
-                            <ul class="nav flex-column">
-                                <li class="nav-item"><a class="nav-link fz-20 fw-600 color-black color-red-hover" href="tel:+74951595901">+7 (495) 159-59-01</a></li>
-                                <li class="nav-item"><a class="nav-link fz-20 fw-600 color-black color-red-hover" href="mailto:support@amdmedia.ru">support@amdmedia.ru</a></li>
-                            </ul>
-                        </div>
-                        <div class="d-lg-none mb-5">
-                            <ul class="list-inline mb-0">
-                                <li class="list-inline-item"><a class="hover-opacity" href="#"><img src="img/icon-vk.svg" alt="VK"></a></li>
-                                <li class="list-inline-item"><a class="hover-opacity" href="#"><img src="img/icon-telegram.svg" alt="Telegram"></a></li>
-                                <li class="list-inline-item"><a class="hover-opacity" href="#"><img src="img/icon-wa.svg" alt="WhatsApp"></a></li>
-                            </ul>
-                        </div>
-                        <div class="d-none d-lg-block">
-                            <div class="d-flex flex-wrap align-items-center">
-                                <a class="btn btn-primary btn-md mx-xxl-4" data-bs-toggle="offcanvas" href="#offcanvasTop" role="button" aria-controls="offcanvasTop">Связаться</a>
-                                <a class="fw-600 color-black color-red-hover d-none d-xxl-block" href="tel:+74951595901">+7 (495) 159-59-01</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="offcanvas-header border-top">
-                        <a class="btn btn-primary btn-md w-100" data-bs-toggle="offcanvas" href="#offcanvasTop" role="button" aria-controls="offcanvasTop">Связаться</a>
                     </div>
                 </div>
 
@@ -84,35 +49,34 @@
         </nav>
     </header>
 
-    <!-- Контент -->
     <main class="main">
         
-        <!-- Ссылка назад -->
-        <section class="section section-back-link">
+        <!-- Хлебные крошки -->
+        <section class="section section-breadcrumbs">
             <div class="container">
-                <a class="back-link color-black color-red-hover d-inline-flex align-items-center" href="#" onclick="window.history.back()">
-                    <img class="flex-shrink-0 me-2" src="img/arrow-up-right.svg" alt="">
-                    <span>Назад</span>
-                </a>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+                        <li class="breadcrumb-item active" aria-current="page"><span>Страница</span></li>
+                    </ol>
+                </nav>
             </div>
         </section>
 
         <section class="section">
             <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-8">
-                        <div class="d-flex flex-column">
-                            <div class="d-flex flex-column flex-lg-row justify-content-center align-items-center">
-                                <span class="fz-32">Ошибка</span>
-                                <img class="mx-3" src="img/404.svg" alt="">
-                                <span class="fz-32">К сожалению страница <br>
+                <div class="d-flex justify-content-center">
+                        <div class="d-flex gap-5 flex-column">
+                            <div class="d-flex gap-2 flex-column align-items-center text-center">
+                                <span class="fs-32 fw-600 text-uppercase">Ошибка</span>
+                                <img class="img-fluid" src="img/404.svg" alt="404">
+                                <span class="fs-32">К сожалению страница <br>
                                     не найдена</span>
                             </div>
-                            <div class="text-center pt-5">
-                                <span class="fz-32">Перейти на <a href="#">главную страницу</a></span>
+                            <div class="text-center">
+                                <span class="fs-20">Перейти на <a href="index.html">главную страницу</a></span>
                             </div>
                         </div>
-                    </div>
                 </div>
             </div>
         </section>
@@ -122,42 +86,58 @@
     <!-- Футер -->
     <footer class="footer">
         <div class="container">
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-5 g-4">
-                <div class="col">
-                    <div class="footer__wiget">
-                        <p class="h3">Услуги</p>
+            <div class="row gy-0">
+                <div class="col-md-6 col-lg-40 order-lg-2">
+                    <div class="widget-footer">
+                        <div class="d-none d-lg-block">
+                            <p class="widget-title">Услуги</p>
+                        </div>
+                        <a class="widget-title widget-collapse-link collapsed d-lg-none" data-bs-toggle="collapse" href="#collapseServicesNav" aria-expanded="false" aria-controls="collapseServicesNav">
+                            <span>Услуги</span>
+                        </a>
+                        <div class="collapse d-lg-block" id="collapseServicesNav">
+                            <ul class="nav-grid ul-cols-1 ul-cols-lg-2">
+                                <li class="nav-item"><a class="nav-link" href="#">Корпоративный сайт</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Интернет-магазин</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Мобильные приложения</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Веб-портал</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Сайт-визитка</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Индивидуальный проект</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Сайт на Tilda или Wix</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Графика, анимация и 3D-визуализация</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Брендинг и фирменный стиль</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">UX/UI</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">SEO услуги</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">SMM Вконтакте</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">SMM Одноклассники и Яндекс.Дзен</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Поисковая оптимизация</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Создание, ведение и аудит контекстной рекламы</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Продвижение на маркетплейсах: Wildberries, Авито, Ozon, Яндекс.Маркет</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-20 order-lg-1">
+                    <div class="widget-footer">
+                        <p class="widget-title">Направления</p>
                         <ul class="nav flex-column">
-                            <li class="nav-item"><a class="nav-link" href="#">Сайты и сервисы</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Сопровождение и развитие</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Дизайн</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Мобильные приложения</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Аналитика</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">SERM / ORM</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Автоматизация</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Разработка</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Продвижение</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Дизайн</a> </li>
+                            <li class="nav-item"><a class="nav-link" href="#">Интеграции</a></li>
                         </ul>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="footer__wiget">
-                        <p class="h3">Направления</p>
+                <div class="col-md-6 col-lg-20 order-lg-3">
+                    <div class="widget-footer">
+                        <p class="widget-title">Компания</p>
                         <ul class="nav flex-column">
-                            <li class="nav-item"><a class="nav-link" href="#">B2B - системы</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">UX/UI - дизайн</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">SEO-продвижение и контент
-                                    маргетинг</a>
-                            </li>
-                            <li class="nav-item"><a class="nav-link" href="#">CRM - системы</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Мобильные приложения </a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Сопровождение и развитие</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Разработка и внедрение корпоративных
-                                    порталов</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">E - COMMERCE решения</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">О нас</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Журнал</a></li>
                         </ul>
                     </div>
-                </div>
-                <div class="col">
-                    <div class="footer__wiget">
-                        <p class="h3">Проекты</p>
+                    <div class="widget-footer">
+                        <p class="widget-title">Проекты</p>
                         <ul class="nav flex-column">
                             <li class="nav-item"><a class="nav-link" href="#">E-commerce</a></li>
                             <li class="nav-item"><a class="nav-link" href="#">Mobile</a></li>
@@ -168,30 +148,36 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="footer__wiget">
-                        <p class="h3">Агенство</p>
-                        <ul class="nav flex-column">
-                            <li class="nav-item"><a class="nav-link" href="#">О нас</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Команда</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Технологии</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Фото</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Отзывы</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Журнал</a></li>
+                <div class="col-md-6 col-lg-20 order-lg-4">
+                    <div class="widget-footer">
+                        <p class="widget-title">Контакты</p>
+                        <div class="fs-18">
+                            <p><a class="link-black" href="tel:+74951595901">+7 (495) 159-59-01</a></p>
+                            <p><a href="mailto:support@amdmedia.ru">support@amdmedia.ru</a></p>
+                        </div>
+                        <ul class="nav gap-3">
+                            <a class="nav-link hover-opacity p-0" href="#" target="_blank" rel="nofollow">
+                                <svg width="27" height="23" viewBox="0 0 27 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.349904 9.75551C0.736925 9.18957 4.78159 7.44036 12.555 4.4774C18.9498 2.03967 24.6822 0.0280062 25.2945 0.00661889C27.5735 -0.0731721 27.5722 0.396135 25.2683 11.267C24.0886 16.8335 23.1232 21.4601 23.1232 21.5477C23.1232 22.0433 21.664 23 20.9082 23C20.4221 23 19.015 22.2597 17.7811 21.3548C16.5472 20.45 15.2879 19.7097 14.9826 19.7097C14.6773 19.7097 13.7267 20.1724 12.8697 20.7379C11.1611 21.8657 9.89713 22.0462 9.27256 21.252C9.04984 20.9694 8.23175 19.2153 7.4539 17.3546L6.04005 13.9713L3.3563 13.1039C0.321113 12.1229 -0.581232 11.1177 0.349904 9.75551ZM9.52683 15.561C9.75081 14.5056 10.5712 13.4399 12.6041 11.5635C14.1289 10.1561 15.1936 9.00248 14.9704 9.00001C14.331 8.99261 8.22111 12.7591 8.0227 13.2833C7.9245 13.5423 8.15416 14.4846 8.53313 15.3772L9.2217 17L9.52683 15.561ZM24.1695 7.65626C23.5256 10.7855 22.6776 15.0679 22.2843 17.1727C21.8911 19.2775 21.3882 21 21.1667 21C20.9452 21 19.2191 19.8365 17.331 18.414C15.4433 16.9919 13.6983 15.6848 13.4531 15.5102C13.1818 15.3166 14.9446 13.3533 17.9656 10.4851C22.9856 5.71861 24.0387 4.03587 22.0029 4.03587C21.4966 4.03587 17.9584 5.83655 14.14 8.03734L7.19775 12.0388L5.25059 11.5303C4.17976 11.2502 3.16841 10.8902 3.0026 10.7297C2.73172 10.4669 23.7408 2.08045 24.8699 2.00018C25.1779 1.97866 24.937 3.92415 24.1695 7.65626ZM13.0329 17.7296C13.1903 17.9791 13.0114 18.4843 12.6359 18.8526C12.0068 19.4695 11.9532 19.4339 11.9532 18.3991C11.9532 17.2567 12.5152 16.9079 13.0329 17.7296Z" fill="#120E1E"/>
+                                </svg>
+                            </a>
+                            <a class="nav-link hover-opacity p-0" href="#" target="_blank" rel="nofollow">
+                                <svg width="31" height="20" viewBox="0 0 31 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.59394 0.39133C-0.0419705 1.04635 -0.382809 2.29064 0.407128 4.72017C1.51852 8.13809 3.43585 11.6921 5.67675 14.489C7.2642 16.4695 8.38992 17.3863 10.5032 18.4208C15.314 20.7753 19.5771 20.1433 19.5771 17.076C19.5771 15.4669 20.1037 15.5766 21.6406 17.5057C22.3509 18.3973 23.5066 19.3635 24.2089 19.6525C25.7033 20.2682 29.3635 20.0244 30.3064 19.2467C31.7885 18.0237 30.8734 15.4501 27.7714 12.1151L26.4077 10.6493L28.4695 7.10656C29.6032 5.15825 30.5309 3.16806 30.5309 2.68433C30.5309 1.07609 29.5421 0.291662 27.2359 0.0713669C23.9936 -0.238135 22.9728 0.371653 21.2623 3.64174L19.7878 6.46118L19.5771 3.86413C19.4613 2.43598 19.1259 1.02834 18.8323 0.736433C18.1401 0.0487436 12.964 -0.231859 11.4789 0.337726C9.98203 0.911917 9.53122 2.60769 10.4602 4.17112C10.8402 4.81064 11.1511 5.63486 11.1511 6.00215C11.1511 7.41648 10.3827 6.55499 9.13056 3.73722C8.17337 1.58244 7.53468 0.693299 6.72326 0.386728C5.39111 -0.116684 2.85657 -0.114595 1.59394 0.39133ZM6.37192 2.52632C6.59521 2.816 7.09686 3.87579 7.48709 4.88168C8.69016 7.98147 11.0013 11.2632 11.9815 11.2632C12.8153 11.2632 12.849 11.0863 12.6867 7.57895C12.5925 5.55284 12.3679 3.46863 12.1871 2.94737C11.8679 2.02737 11.939 2 14.6252 2H17.3917L17.5124 5.89011C17.6129 9.11748 17.7521 9.80253 18.3307 9.91327C19.3025 10.0994 20.9466 8.19369 22.7043 4.84421L24.1972 2H26.277C28.959 2 28.9573 2.38442 26.2538 6.88211C25.0975 8.80589 24.1513 10.4989 24.1513 10.6442L26.2009 13.2964C28.4531 15.9204 29.3092 17.3267 28.9022 17.7343C28.7563 17.8804 27.7938 18 26.7631 18C25.0529 18 24.6538 17.7794 22.1922 15.4737C18.5905 12.1002 17.6112 12.1869 17.3471 15.9032C17.1848 18.1882 16.5187 18.4084 12.9293 17.3638C11.0235 16.8088 10.0665 16.1832 8.19523 14.2682C5.04228 11.0417 1.29095 3.69137 2.11556 2.35537C2.45827 1.8 5.91945 1.93895 6.37192 2.52632Z" fill="#120E1E"/>
+                                </svg>
+                            </a>
+                            <a class="nav-link hover-opacity p-0" href="#" target="_blank" rel="nofollow">
+                                <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M28.5 14.65V14.35C22.3 14.15 19.47 14 17.2 11.8C15 9.53 14.84 6.7 14.65 0.5H14.35C14.15 6.7 14 9.53 11.8 11.8C9.53 14 6.7 14.16 0.5 14.35V14.65C6.7 14.85 9.53 15 11.8 17.2C14 19.47 14.16 22.3 14.35 28.5H14.65C14.85 22.3 15 19.47 17.2 17.2C19.47 15 22.3 14.84 28.5 14.65Z" fill="#120E1E"/>
+                                    <rect x="1.5" y="1.5" width="26" height="26" rx="6" stroke="black" stroke-width="2"/>
+                                </svg>
+                            </a>
+                            <a class="nav-link hover-opacity p-0" href="#" target="_blank" rel="nofollow">
+                                <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.95874 8.37606C3.61325 5.02203 6.0921 2.70499 9.37416 1.4447C16.1611 -1.16105 23.9022 1.7935 27.1187 8.21823C28.2975 10.572 28.5005 11.4777 28.5001 14.3807C28.5001 17.1927 28.2768 18.2539 27.2162 20.4916C24.1475 26.9652 16.4217 30.1219 9.64641 27.6708C7.7839 26.9974 7.40116 27.0006 4.37381 27.7125C2.57824 28.1353 0.980775 28.3523 0.823545 28.1959C0.666315 28.0389 0.899016 26.5787 1.34061 24.9503C2.11418 22.0993 2.11327 21.8967 1.32487 19.4389C0.0454654 15.4509 0.252565 11.835 1.95874 8.37606ZM25.6251 19.7087C28.3368 13.5616 25.7069 6.37961 19.8403 3.90906C14.5023 1.66143 9.40951 2.73233 5.66403 6.88939C2.70806 10.1701 1.86961 15.8687 3.7931 19.5993C4.52782 21.0232 4.50626 23.2168 3.73965 25.1308C3.42663 25.9125 3.54203 25.9517 5.1552 25.6095C7.64051 25.0817 8.87015 25.1749 11.1781 26.0657C16.3988 28.08 23.2647 25.0587 25.6251 19.7087ZM8.37738 8.40623C6.34164 10.7611 7.09464 13.4705 10.8313 17.2341C12.9293 19.3473 14.1758 20.2084 15.9749 20.789C19.2297 21.8387 21.4255 21.1702 22.0942 18.9259C22.3398 18.1023 22.0861 17.7906 20.5232 16.9978L18.6596 16.0515L17.6695 16.9764C16.3845 18.1781 15.796 18.1429 13.9696 16.757C11.6058 14.9635 10.8837 13.6284 11.5785 12.337C12.0527 11.4554 12.0343 10.9792 11.4718 9.57007C10.704 7.64771 9.4432 7.17326 8.37738 8.40623Z" fill="#120E1E"/>
+                                </svg>
+                            </a>
                         </ul>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="footer__contacts">
-                        <p class="h3">Контакты</p>
-                        <p><a class="color-black color-red-hover" href="tel:+74951595901">+7 (495) 159-59-01</a></p>
-                        <p><a href="mailto:support@amdmedia.ru">support@amdmedia.ru</a></p>
-                        <ul class="list-inline">
-                            <li class="list-inline-item"><a class="hover-opacity" href="#"><img src="img/icon-vk.svg" alt=""></a></li>
-                            <li class="list-inline-item"><a class="hover-opacity" href="#"><img src="img/icon-telegram.svg" alt=""></a></li>
-                            <li class="list-inline-item"><a class="hover-opacity" href="#"><img src="img/icon-wa.svg" alt=""></a></li>
-                        </ul>
-                        <p><a class="btn btn-primary btn-md" data-bs-toggle="offcanvas" href="#offcanvasTop" role="button" aria-controls="offcanvasTop">Связаться</a></p>
                     </div>
                 </div>
             </div>
@@ -200,76 +186,86 @@
 
     <!-- Back to Top -->
     <button type="button" class="btn btn-icon back-to-top">
-        <i class='bx bx-up-arrow-alt'></i>
+        <i class="bx bx-up-arrow-alt"></i>
     </button>
 
-    <!-- Modal after Action -->
+    <!-- Offcanvas Contact -->
     <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop">
         <div class="offcanvas-header justify-content-end">
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
-        <div class="offcanvas-body">
+        <div class="offcanvas-body pb-lg-5">
             <div class="container">
-                <div class="row g-4">
+                <div class="row gy-4">
                     <div class="col-lg-4">
                         <div class="p-lg-4">
-                            <p class="fz-32 fw-600">Напишите нам</p>
-                            <p class="fz-22">Кратко опишите свою задачу, и мы свяжемся с вами в кратчайшие сроки.</p>
+                            <p class="fs-32 fw-600">Напишите нам!</p>
+                            <div class="fs-18">
+                                <p>Кратко опишите свою задачу, и<br> мы свяжемся<br> с вами в кратчайшие сроки.</p>
+                            </div>
                         </div>
                     </div>
                     <div class="col-lg-4">
                         <div class="p-lg-4">
-                            <form class="form-contact" action="#" method="post">
-                                <div class="mb-3">
+                            <form class="form-contact d-flex gap-3 flex-column" action="#" method="post">
+                                <div>
                                     <label class="form-label d-none">Имя</label>
                                     <input type="text" class="form-control" placeholder="Имя">
                                 </div>
-                                <div class="mb-3">
+                                <div>
                                     <label class="form-label d-none">Телефон</label>
-                                    <input type="text" class="form-control" placeholder="Телефон">
+                                    <input type="text" class="form-control maskPhone" placeholder="Телефон">
                                 </div>
-                                <div class="mb-3">
+                                <div>
                                     <label class="form-label d-none">Email</label>
                                     <input type="email" class="form-control" placeholder="Email">
                                 </div>
-                                <div class="mb-3">
-                                    <select class="form-select">
-                                        <option selected>Бюджет</option>
-                                        <option value="1">до 500 тыс. рублей</option>
-                                        <option value="2">до 1 млн рублей</option>
-                                        <option value="3">от 1 млн до 2 млн рублей</option>
-                                        <option value="3">более 5 млн рублей</option>
-                                    </select>
-                                </div>
-                                <div class="mb-3">
+                                <div>
                                     <label class="form-label d-none">Сообщение</label>
                                     <textarea class="form-control" rows="3" placeholder="Сообщение"></textarea>
                                 </div>
-                                <button type="submit" class="btn btn-primary btn-md w-100">Отправить</button>
-                                <p class="fz-14 mt-3">Нажимая на кнопку, вы соглашаетесь с <a href="#privacyPolicy"
-                                        data-bs-toggle="modal" data-bs-target="#privacyPolicy">Политикой персональных
-                                        данных</a></p>
+                                <div class="mt-4">
+                                    <button type="submit" class="btn btn-primary btn-md w-100">Связаться</button>
+                                </div>
                             </form>
+                            <p class="fs-10 text-end mt-2 mb-0">Нажимая на кнопку, вы соглашаетесь с <a href="/policy.html">Политикой персональных данных</a></p>
                         </div>
                     </div>
                     <div class="col-lg-4">
-                        <div class="p-lg-4">
-                            <div class="fw-600 mb-5">
-                                <p class="fz-20 mb-1">Контакты:</p>
-                                <ul class="list-unstyled">
-                                    <li><a href="mailto:support@amdmedia.ru">support@amdmedia.ru</a></li>
-                                    <li><a href="tel:+74951595901">+7 (495) 159-59-01</a></li>
+                        <div class="d-flex gap-3 flex-column p-lg-4">
+                            <div class="fs-20">
+                                <p class="mb-0">Наш Email:</p>
+                                <ul class="list-unstyled mb-0">
+                                    <li><a class="fw-600" href="mailto:support@amdmedia.ru">support@amdmedia.ru</a></li>
                                 </ul>
                             </div>
-                            <div class="fw-600 mb-5">
-                                <p class="fz-20 mb-1">Наш адрес:</p>
-                                <p>117638 Россия, Москва,<br>
+                            <div class="fs-20">
+                                <p class="mb-0">Наш адрес:</p>
+                                <p class="mb-0">117638 Россия, Москва,<br>
                                     Одесская улица, 2кС</p>
                             </div>
-                            <ul class="list-inline mb-5">
-                                <li class="list-inline-item"><a class="hover-opacity" href="#"><img src="img/icon-vk.svg" alt=""></a></li>
-                                <li class="list-inline-item"><a class="hover-opacity" href="#"><img src="img/icon-telegram.svg" alt=""></a></li>
-                                <li class="list-inline-item"><a class="hover-opacity" href="#"><img src="img/icon-wa.svg" alt=""></a></li>
+                            <ul class="nav gap-3">
+                                <a class="nav-link hover-opacity p-0" href="#" target="_blank" rel="nofollow">
+                                    <svg width="27" height="23" viewBox="0 0 27 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.349904 9.75551C0.736925 9.18957 4.78159 7.44036 12.555 4.4774C18.9498 2.03967 24.6822 0.0280062 25.2945 0.00661889C27.5735 -0.0731721 27.5722 0.396135 25.2683 11.267C24.0886 16.8335 23.1232 21.4601 23.1232 21.5477C23.1232 22.0433 21.664 23 20.9082 23C20.4221 23 19.015 22.2597 17.7811 21.3548C16.5472 20.45 15.2879 19.7097 14.9826 19.7097C14.6773 19.7097 13.7267 20.1724 12.8697 20.7379C11.1611 21.8657 9.89713 22.0462 9.27256 21.252C9.04984 20.9694 8.23175 19.2153 7.4539 17.3546L6.04005 13.9713L3.3563 13.1039C0.321113 12.1229 -0.581232 11.1177 0.349904 9.75551ZM9.52683 15.561C9.75081 14.5056 10.5712 13.4399 12.6041 11.5635C14.1289 10.1561 15.1936 9.00248 14.9704 9.00001C14.331 8.99261 8.22111 12.7591 8.0227 13.2833C7.9245 13.5423 8.15416 14.4846 8.53313 15.3772L9.2217 17L9.52683 15.561ZM24.1695 7.65626C23.5256 10.7855 22.6776 15.0679 22.2843 17.1727C21.8911 19.2775 21.3882 21 21.1667 21C20.9452 21 19.2191 19.8365 17.331 18.414C15.4433 16.9919 13.6983 15.6848 13.4531 15.5102C13.1818 15.3166 14.9446 13.3533 17.9656 10.4851C22.9856 5.71861 24.0387 4.03587 22.0029 4.03587C21.4966 4.03587 17.9584 5.83655 14.14 8.03734L7.19775 12.0388L5.25059 11.5303C4.17976 11.2502 3.16841 10.8902 3.0026 10.7297C2.73172 10.4669 23.7408 2.08045 24.8699 2.00018C25.1779 1.97866 24.937 3.92415 24.1695 7.65626ZM13.0329 17.7296C13.1903 17.9791 13.0114 18.4843 12.6359 18.8526C12.0068 19.4695 11.9532 19.4339 11.9532 18.3991C11.9532 17.2567 12.5152 16.9079 13.0329 17.7296Z" fill="#120E1E"/>
+                                    </svg>
+                                </a>
+                                <a class="nav-link hover-opacity p-0" href="#" target="_blank" rel="nofollow">
+                                    <svg width="31" height="20" viewBox="0 0 31 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.59394 0.39133C-0.0419705 1.04635 -0.382809 2.29064 0.407128 4.72017C1.51852 8.13809 3.43585 11.6921 5.67675 14.489C7.2642 16.4695 8.38992 17.3863 10.5032 18.4208C15.314 20.7753 19.5771 20.1433 19.5771 17.076C19.5771 15.4669 20.1037 15.5766 21.6406 17.5057C22.3509 18.3973 23.5066 19.3635 24.2089 19.6525C25.7033 20.2682 29.3635 20.0244 30.3064 19.2467C31.7885 18.0237 30.8734 15.4501 27.7714 12.1151L26.4077 10.6493L28.4695 7.10656C29.6032 5.15825 30.5309 3.16806 30.5309 2.68433C30.5309 1.07609 29.5421 0.291662 27.2359 0.0713669C23.9936 -0.238135 22.9728 0.371653 21.2623 3.64174L19.7878 6.46118L19.5771 3.86413C19.4613 2.43598 19.1259 1.02834 18.8323 0.736433C18.1401 0.0487436 12.964 -0.231859 11.4789 0.337726C9.98203 0.911917 9.53122 2.60769 10.4602 4.17112C10.8402 4.81064 11.1511 5.63486 11.1511 6.00215C11.1511 7.41648 10.3827 6.55499 9.13056 3.73722C8.17337 1.58244 7.53468 0.693299 6.72326 0.386728C5.39111 -0.116684 2.85657 -0.114595 1.59394 0.39133ZM6.37192 2.52632C6.59521 2.816 7.09686 3.87579 7.48709 4.88168C8.69016 7.98147 11.0013 11.2632 11.9815 11.2632C12.8153 11.2632 12.849 11.0863 12.6867 7.57895C12.5925 5.55284 12.3679 3.46863 12.1871 2.94737C11.8679 2.02737 11.939 2 14.6252 2H17.3917L17.5124 5.89011C17.6129 9.11748 17.7521 9.80253 18.3307 9.91327C19.3025 10.0994 20.9466 8.19369 22.7043 4.84421L24.1972 2H26.277C28.959 2 28.9573 2.38442 26.2538 6.88211C25.0975 8.80589 24.1513 10.4989 24.1513 10.6442L26.2009 13.2964C28.4531 15.9204 29.3092 17.3267 28.9022 17.7343C28.7563 17.8804 27.7938 18 26.7631 18C25.0529 18 24.6538 17.7794 22.1922 15.4737C18.5905 12.1002 17.6112 12.1869 17.3471 15.9032C17.1848 18.1882 16.5187 18.4084 12.9293 17.3638C11.0235 16.8088 10.0665 16.1832 8.19523 14.2682C5.04228 11.0417 1.29095 3.69137 2.11556 2.35537C2.45827 1.8 5.91945 1.93895 6.37192 2.52632Z" fill="#120E1E"/>
+                                    </svg>
+                                </a>
+                                <a class="nav-link hover-opacity p-0" href="#" target="_blank" rel="nofollow">
+                                    <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M28.5 14.65V14.35C22.3 14.15 19.47 14 17.2 11.8C15 9.53 14.84 6.7 14.65 0.5H14.35C14.15 6.7 14 9.53 11.8 11.8C9.53 14 6.7 14.16 0.5 14.35V14.65C6.7 14.85 9.53 15 11.8 17.2C14 19.47 14.16 22.3 14.35 28.5H14.65C14.85 22.3 15 19.47 17.2 17.2C19.47 15 22.3 14.84 28.5 14.65Z" fill="#120E1E"/>
+                                        <rect x="1.5" y="1.5" width="26" height="26" rx="6" stroke="black" stroke-width="2"/>
+                                    </svg>
+                                </a>
+                                <a class="nav-link hover-opacity p-0" href="#" target="_blank" rel="nofollow">
+                                    <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.95874 8.37606C3.61325 5.02203 6.0921 2.70499 9.37416 1.4447C16.1611 -1.16105 23.9022 1.7935 27.1187 8.21823C28.2975 10.572 28.5005 11.4777 28.5001 14.3807C28.5001 17.1927 28.2768 18.2539 27.2162 20.4916C24.1475 26.9652 16.4217 30.1219 9.64641 27.6708C7.7839 26.9974 7.40116 27.0006 4.37381 27.7125C2.57824 28.1353 0.980775 28.3523 0.823545 28.1959C0.666315 28.0389 0.899016 26.5787 1.34061 24.9503C2.11418 22.0993 2.11327 21.8967 1.32487 19.4389C0.0454654 15.4509 0.252565 11.835 1.95874 8.37606ZM25.6251 19.7087C28.3368 13.5616 25.7069 6.37961 19.8403 3.90906C14.5023 1.66143 9.40951 2.73233 5.66403 6.88939C2.70806 10.1701 1.86961 15.8687 3.7931 19.5993C4.52782 21.0232 4.50626 23.2168 3.73965 25.1308C3.42663 25.9125 3.54203 25.9517 5.1552 25.6095C7.64051 25.0817 8.87015 25.1749 11.1781 26.0657C16.3988 28.08 23.2647 25.0587 25.6251 19.7087ZM8.37738 8.40623C6.34164 10.7611 7.09464 13.4705 10.8313 17.2341C12.9293 19.3473 14.1758 20.2084 15.9749 20.789C19.2297 21.8387 21.4255 21.1702 22.0942 18.9259C22.3398 18.1023 22.0861 17.7906 20.5232 16.9978L18.6596 16.0515L17.6695 16.9764C16.3845 18.1781 15.796 18.1429 13.9696 16.757C11.6058 14.9635 10.8837 13.6284 11.5785 12.337C12.0527 11.4554 12.0343 10.9792 11.4718 9.57007C10.704 7.64771 9.4432 7.17326 8.37738 8.40623Z" fill="#120E1E"/>
+                                    </svg>
+                                </a>
                             </ul>
                         </div>
                     </div>
@@ -278,33 +274,10 @@
         </div>
     </div>
 
-    <!-- Modal Politicy -->
-    <div class="modal fade" id="privacyPolicy" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-xl">
-            <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <p class="fs-2">Политика конфиденциальности</p>
-                <p>1. Принимая условия настоящего Соглашения, Пользователь даёт своё согласие Администрации сайта https://amdmedia.ru (далее — Администрация) на сбор, хранение и обработку своих персональных данных, указанных путём заполнения веб-форм на сайте https://amdmedia.ru (далее — Сайт). Под персональными данными понимается любая информация, относящаяся к прямо или косвенно определённому или определяемому физическому лицу (гражданину).</p>
-                <p>2. Пользователь также даёт своё согласие Администрации на отправку маркетинговых и информационных рассылок.</p>
-                <p>3. Основанием для обработки персональных данных являются: статья 24 Конституции РФ и статья 6 Федерального закона № 152-ФЗ «О персональных данных» с дополнениями и изменениями.</p>
-                <p>4. В ходе обработки с персональными данными будут совершены следующие операции: сбор, хранение, уточнение, передача, блокирование, удаление, уничтожение — все упомянутые действия только в целях, указанных в п. 2 настоящего Соглашения.</p>
-                <p>5. Администрация обязуется не передавать полученную от Пользователя информацию третьим лицам. Не считается нарушением предоставление персональных данных третьим лицам, действующим на основании договора с Сайтом, для исполнения обязательств перед Пользователем и только в рамках настоящего Соглашения.</p>
-                <p>6. Персональные данные хранятся и обрабатываются до завершения всех необходимых процедур либо до ликвидации Сайта.</p>
-                <p>7. Согласие может быть отозвано Пользователем или его представителем путём направления письменного заявления на Сайт по электронному адресу info@amdmedia.ru</p>
-                <p>8. Пользователь принимает политику использования файлов cookies, используемую на Сайте, и даёт согласие на получение информации об IP-адресе и иных сведений о его активности на Сайте. Данная информация не используется для установления личности Пользователя.</p>
-                <p>9. Администрация при обработке персональных данных принимает необходимые и достаточные организационные и технические меры для защиты персональных данных от неправомерного доступа к ним, а также от иных неправомерных действий в отношении персональных данных.</p>
-            </div>
-            </div>
-        </div>
-    </div>
-
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/imask.js"></script>
-    <script src="js/glightbox.min.js"></script>
+    <script src="js/fancybox.umd.js"></script>
     <script src="js/main.js"></script>
 
 </body>
