@@ -478,10 +478,6 @@ textarea {
     }
 }
 
-.hover-cursor {
-    cursor: url(../img/cursor-steps.svg) 0 0, pointer;
-}
-
 /*//////////////////////////////////////////////////////////////////
 [ BASE STYLES ]*/
 
@@ -986,7 +982,7 @@ img {
 .hero-title h1 {
     font-size: 32px;
     font-weight: 400;
-    letter-spacing: 2%;
+    letter-spacing: 0.02em;
     margin-bottom: 46px;
 }
 
@@ -1020,14 +1016,14 @@ img {
 .activities-card .activities-title {
     font-size: 32px;
     font-weight: 400;
-    letter-spacing: 2%;
+    letter-spacing: 0.02em;
     margin-bottom: 10px;
 }
 
 .activities-card .activities-desc {
     font-size: 20px;
     font-weight: 400;
-    letter-spacing: 2%;
+    letter-spacing: 0.02em;
     margin-bottom: 0;
 }
 
@@ -1478,10 +1474,23 @@ img {
 }
 
 /*------------------------------------------------------------------
-[ section-works ]*/
+[ section-works-slider ]*/
+
+.section-works-slider {
+    padding: 55px 0 78px;
+    background-color: #120E1E;
+}
+
+.section-works-slider .link-with-arrow {
+    color: #fff;
+}
+
+.section-works-slider .link-with-arrow::after {
+    content: url("data:image/svg+xml,%3Csvg width='21' height='22' viewBox='0 0 21 22' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M18.8485 0.811279H1.87879C0.860604 0.811279 0.181816 1.49052 0.181816 2.50939C0.181816 3.52826 0.860604 4.20751 1.87879 4.20751H14.7758L0.690907 18.3018C0.0121194 18.9811 0.0121194 20 0.690907 20.6792C1.3697 21.3584 2.38788 21.3584 3.06666 20.6792L17.1515 6.58486V19.4905C17.1515 20.5094 17.8303 21.1886 18.8485 21.1886C19.8667 21.1886 20.5455 20.5094 20.5455 19.4905V2.50939C20.5455 1.49052 19.8667 0.811279 18.8485 0.811279Z' fill='white'/%3E%3C/svg%3E%0A");
+}
 
 .worksSwiper {
-    padding-bottom: 50px;
+    padding-bottom: 80px;
 }
 
 .worksSwiper .swiper-slide {
@@ -1490,22 +1499,22 @@ img {
 }
 
 .worksSwiper .swiper-slide.swiper-slide-active {
-    transform: translateY(50px);
+    transform: translateY(80px);
     transition: transform .3s;
 }
 
 .worksSwiper .swiper-slide.swiper-slide-prev {
-    transform: translateY(25px);
+    transform: translateY(40px);
     transition: transform .3s;
 }
 
 .worksSwiper .swiper-slide.swiper-slide-next {
-    transform: translateY(25px);
+    transform: translateY(40px);
     transition: transform .3s;
     transition-delay: .1s;
 }
 
-.worksSwiper .swiper-slide img {
+.worksSwiper .swiper-img {
     width: 100%;
 }
 
@@ -1615,7 +1624,7 @@ img {
 }
 
 /*------------------------------------------------------------------
-[ section-accordeon ]*/
+[ section-faq ]*/
 
 .btn-accordeon {
     display: inline-flex;
@@ -1640,6 +1649,81 @@ img {
 
 .btn-accordeon.collapsed .accordion-caret {
     transform: rotate(90deg);
+}
+
+/*------------------------------------------------------------------
+[ section-uslugi ]*/
+
+.section-uslugi {
+    position: relative;
+    overflow-x: clip;
+}
+
+.section-uslugi .section-bg-img {
+    position: absolute;
+    top: -50px;
+    right: -69px;
+    z-index: -1;
+}
+
+.uslugi-grid {
+    position: relative;
+}
+
+.widget-uslugi {
+    margin-bottom: 72px;
+}
+
+.widget-uslugi .widget-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+
+.widget-uslugi .widget-title > * {
+    margin-bottom: 0;
+}
+
+.widget-uslugi .widget-title img,
+.widget-uslugi .widget-title svg {
+    vertical-align: inherit;
+}
+
+.widget-uslugi .list-uslugi {
+    --bs-link-color: #120E1E;
+    --bs-link-hover-color: #e20338;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 0;
+    padding-left: 24px;
+}
+
+.widget-uslugi .list-uslugi li {
+    list-style-image: url("data:image/svg+xml,%3Csvg width='12' height='14' viewBox='0 0 12 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 7L-6.52533e-07 13.9282L-4.68497e-08 0.0717964L12 7Z' fill='%23EF9CB0'/%3E%3C/svg%3E%0A");
+    padding-inline-start: 12px;
+}
+
+.widget-uslugi .list-uslugi a {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+}
+
+@media (min-width: 992px) {
+
+    .section-uslugi .section-bg-img {
+        top: -50px;
+        right: 5%;
+    }
 }
 
 /*//////////////////////////////////////////////////////////////////

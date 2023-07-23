@@ -79,6 +79,7 @@ const worksSwiper = new Swiper('.worksSwiper', {
     spaceBetween: 15,
     centeredSlides: true,
     loop: true,
+    grabCursor: true,
     autoplay: {
         delay: 2500,
         disableOnInteraction: false,
