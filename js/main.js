@@ -40,8 +40,8 @@ const testimonialSwiper = new Swiper('.testimonialSwiper', {
     slidesPerView: 1,
     spaceBetween: 30,
     navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '.swiper-next',
+        prevEl: '.swiper-prev',
     },
     pagination: {
         el: '.swiper-pagination',
@@ -97,13 +97,14 @@ const teamSwiper = new Swiper('.teamSwiper', {
     slidesPerView: 1.25,
     spaceBetween: 15,
     freeMode: true,
+    grabCursor: true,
     navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '.swiper-next',
+        prevEl: '.swiper-prev',
     },
     scrollbar: {
         el: '.swiper-scrollbar',
-        hide: true,
+        hide: false,
     },
     breakpoints: {
         992: {
@@ -198,8 +199,8 @@ Fancybox.bind("[data-fancybox]", {
     Toolbar: {
         display: {
             left: [],
-            middle: ["close"],
-            right: [],
+            middle: [],
+            right: ["close"],
         },
     },
 });
