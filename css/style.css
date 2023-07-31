@@ -1215,10 +1215,25 @@ img {
 
 .testimonial-text {
     position: relative;
-    height: 100%;
-    padding: 50px 30px 40px 30px;
+    height: 315px;
+    padding: 30px 30px 20px;
     border: 2px solid;
     border-color: #BCBBBF;
+    overflow-y: auto;
+}
+
+.testimonial-text::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+}
+
+.testimonial-text::-webkit-scrollbar-track {
+    background-color: rgba(0,0,0,.1);
+}
+
+.testimonial-text::-webkit-scrollbar-thumb {
+    border-radius: 2px;
+    background-color: rgba(0,0,0,.5);
 }
 
 .testimonial-text p {
@@ -1236,14 +1251,13 @@ img {
     }
 
     .testimonial-img {
-        transform: translateX(-30px);
+        transform: translate(-30px, 0);
         z-index: 1;
     }
 
     .testimonial-text {
-        margin-top: 50px;
         padding: 50px 80px 40px 30px;
-        transform: translateX(30px);
+        transform: translate(30px, 50px);
     }
 }
 
@@ -1646,7 +1660,7 @@ img {
 }
 
 /*------------------------------------------------------------------
-[ section-faq ]*/
+[ accordeon ]*/
 
 .btn-accordeon {
     display: inline-flex;
@@ -1791,6 +1805,62 @@ img {
 
     .page-content img {
         margin-bottom: 72px;
+    }
+}
+
+/*------------------------------------------------------------------
+[ section-mission ]*/
+
+.section-mission .section-title {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-bottom: 32px;
+}
+
+.section-mission .section-title p {
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 1.2;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+.mission-card {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.mission-img {
+    margin-bottom: 24px;
+}
+
+.mission-title {
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #E20338;
+    margin-bottom: 8px;
+}
+
+.mission-card p:last-child {
+    margin-bottom: 0;
+}
+
+@media (min-width: 992px) {
+
+    .section-mission .section-title {
+        margin-bottom: 72px;
+        gap: 4px;
+    }
+
+    .section-mission .section-title p {
+        font-size: 50px;
+    }
+
+    .mission-card {
+        font-size: 24px;
     }
 }
 
