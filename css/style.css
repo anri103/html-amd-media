@@ -358,12 +358,15 @@ textarea {
 .btn-rounded-interactive {
     position: relative;
     display: inline-flex;
+    justify-content: center;
     align-items: center;
     width: 180px;
     height: 180px;
     color: var(--color-black);
-    font-weight: var(--fw-semibold);
-    border: 3px solid;
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: 1px solid;
     border-color: var(--color-black);
     border-radius: 50%;
 }
