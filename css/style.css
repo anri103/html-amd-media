@@ -335,6 +335,13 @@ textarea {
     transition: transform .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
+.btn-secondary:active,
+.btn-secondary:hover {
+    transform: translate(-0.25rem, -0.25rem);
+    box-shadow: 0.25rem 0.25rem var(--color-black);
+    z-index: 5;
+}
+
 .btn-text {
 
 }
