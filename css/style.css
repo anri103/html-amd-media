@@ -56,7 +56,7 @@
     --bs-body-font-family: 'Source Sans Pro', sans-serif;
     --bs-body-font-size: 1rem;
     --bs-body-font-weight: 400;
-    --bs-body-line-height: 1.5;
+    --bs-body-line-height: normal;
     --bs-body-color: #212529;
     --bs-body-bg: #fff;
     --bs-border-width: 1px;
@@ -279,7 +279,7 @@ textarea {
     --bs-btn-padding-y: 0.75rem;
     --bs-btn-font-size: 1.25rem;
     --bs-btn-font-weight: 400;
-    --bs-btn-line-height: 1.35;
+    --bs-btn-line-height: normal;
     --bs-btn-color: var(--color-black);
     --bs-btn-bg: transparent;
     --bs-btn-border-width: 1px;
@@ -360,8 +360,8 @@ textarea {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 180px;
-    height: 180px;
+    width: 227px;
+    height: 227px;
     color: var(--color-black);
     font-size: 24px;
     font-weight: 600;
@@ -406,11 +406,6 @@ textarea {
 }
 
 @media (min-width: 992px) {
-
-    .btn-rounded-interactive {
-        width: 205px;
-        height: 205px;
-    }
 
     .btn-md {
         padding: .75rem 2.5rem;
@@ -1003,7 +998,7 @@ img {
 .hero-title h1 {
     font-size: 32px;
     font-weight: 400;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.88px;
     margin-bottom: 46px;
 }
 
@@ -1037,14 +1032,15 @@ img {
 .activities-card .activities-title {
     font-size: 32px;
     font-weight: 400;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.64px;
     margin-bottom: 10px;
 }
 
 .activities-card .activities-desc {
     font-size: 20px;
     font-weight: 400;
-    letter-spacing: 0.02em;
+    line-height: normal;
+    letter-spacing: 0.4px;
     margin-bottom: 0;
 }
 
@@ -1077,7 +1073,7 @@ img {
 .item-advantage span {
     font-size: 14px;
     font-weight: 400;
-    line-height: 1.25;
+    line-height: normal;
 }
 
 @media (min-width: 992px) {
@@ -1390,7 +1386,8 @@ img {
 .project-card .card-title {
     font-size: 20px;
     font-weight: 600;
-    line-height: 1.2;
+    line-height: 121.7%;
+    letter-spacing: 0.4px;
     display: -webkit-box;
     -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
@@ -1717,15 +1714,14 @@ img {
     display: flex;
     align-items: center;
     gap: 10px;
-    font-size: 40px;
-    font-weight: 400;
-    line-height: 1;
-    letter-spacing: 0.02em;
-    text-transform: uppercase;
     margin-bottom: 24px;
 }
 
-.widget-uslugi .widget-title > * {
+.widget-uslugi .widget-title p {
+    font-size: 50px;
+    font-weight: 600;
+    font-variant: all-small-caps;
+    text-transform: uppercase;
     margin-bottom: 0;
 }
 
@@ -1752,8 +1748,8 @@ img {
 .widget-uslugi .list-uslugi a {
     font-size: 20px;
     font-weight: 600;
-    line-height: 1.25;
-    letter-spacing: 0.02em;
+    line-height: normal;
+    letter-spacing: 0.4px;
     text-transform: uppercase;
 }
 
@@ -1791,7 +1787,10 @@ img {
     margin-bottom: 24px;
 }
 
-.page-content p {
+.page-content p,
+.page-content dl,
+.page-content ol,
+.page-content ul {
     font-size: 20px;
     margin-bottom: 32px;
 }
@@ -1824,8 +1823,9 @@ img {
 .section-mission .section-title p {
     font-size: 32px;
     font-weight: 400;
-    line-height: 1.2;
+    line-height: 112.5%;
     text-transform: uppercase;
+    font-variant: all-small-caps;
     margin-bottom: 0;
 }
 
@@ -1841,7 +1841,8 @@ img {
 .mission-title {
     font-size: 32px;
     font-weight: 400;
-    line-height: 1;
+    line-height: 93.75%;
+    font-variant: all-small-caps;
     text-transform: uppercase;
     color: #E20338;
     margin-bottom: 8px;
@@ -1860,6 +1861,7 @@ img {
 
     .section-mission .section-title p {
         font-size: 50px;
+        line-height: 120%;
     }
 
     .mission-card {
