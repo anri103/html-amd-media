@@ -67,14 +67,14 @@
             <div class="container">
                 <div style="max-width: 870px;">
                     <!-- Заголовок -->
-                    <div class="d-flex gap-2">
+                    <div class="d-flex gap-2 mb-3">
                         <div class="title-img">
                             <svg width="36" height="32" viewBox="0 0 36 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="22.4435" cy="18.4434" r="13" fill="#92F2DA"/>
                                 <path d="M17.8408 13.4895L4.10679 15.3268L9.38262 2.51411L17.8408 13.4895Z" fill="#E20338"/>
                             </svg>
                         </div>
-                        <h1>Корпоративный сайт, заголовок который имеет очень длинное название</h1>
+                        <h1 class="text-uppercase mb-0">Корпоративный сайт</h1>
                     </div>
                     <!-- Контент -->
                     <div class="fs-20">
@@ -89,11 +89,11 @@
             <div class="container">
                 <!-- Desktop img -->
                 <div class="d-none d-lg-block">
-                    <img src="img/img-6292.svg" alt="">
+                    <img class="img-fluid" src="img/img-6292.svg" alt="">
                 </div>
                 <!-- Mobile img -->
                 <div class="d-lg-none">
-                    <img src="img/img-6293.svg" alt="">
+                    <img class="img-fluid" src="img/img-6293.svg" alt="">
                 </div>
             </div>
         </section>
@@ -166,24 +166,27 @@
             </div>
         </section>
 
-        <!-- Accordeon -->
-        <section class="section section-accordeon">
+        <!-- Этапы -->
+        <section class="section">
             <div class="container">
 
-                <h2>Заголовок</h2>
+                <div class="section-title">
+                    <h2>Заголовок</h2>
+                </div>
 
-                <div class="accordeon-container" style="max-width: 1060px;">
+                <div class="accordeon-steps accordeon-container" style="max-width: 1060px;">
                     <div class="row">
                         <div class="col-lg-6">
                             <div class="accordeon-item">
-                                <a class="btn-accordeon collapsed" href="#collapse-01" data-bs-toggle="collapse" role="button"
-                                    aria-expanded="false" aria-controls="collapse-01">
-                                    <span class="fs-48">1 этап</span>
-                                </a>
-                                <div class="collapse" id="collapse-01">
+                                <div class="mb-4">
+                                    <a class="btn-accordeon accordeon-arrow collapsed" href="#step-01" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="step-01">
+                                        <span class="fs-48">1 этап</span>
+                                    </a>
+                                </div>
+                                <div class="collapse" id="step-01">
                                     <div class="position-relative">
-                                        <div class="accordeon-content">
-                                            <p class="fs-20">Мы создаем ad-hoc исследовательские решения для наших
+                                        <div class="accordeon-content fs-20">
+                                            <p>Мы создаем ad-hoc исследовательские решения для наших
                                                 клиентов. А также работаем с любыми типами исследований рынка и
                                                 аудитории для поиска настоящих инсайтов, на которые можно опереться</p>
                                         </div>
@@ -193,14 +196,15 @@
                         </div>
                         <div class="col-lg-6">
                             <div class="accordeon-item">
-                                <a class="btn-accordeon collapsed" href="#collapse-02" data-bs-toggle="collapse" role="button"
-                                    aria-expanded="false" aria-controls="collapse-02">
-                                    <span class="fs-48">2 этап</span>
-                                </a>
-                                <div class="collapse" id="collapse-02">
+                                <div class="mb-4">
+                                    <a class="btn-accordeon accordeon-arrow collapsed" href="#step-02" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="step-02">
+                                        <span class="fs-48">2 этап</span>
+                                    </a>
+                                </div>
+                                <div class="collapse" id="step-02">
                                     <div class="position-relative">
-                                        <div class="accordeon-content">
-                                            <p class="fs-20">Мы создаем ad-hoc исследовательские решения для наших
+                                        <div class="accordeon-content fs-20">
+                                            <p>Мы создаем ad-hoc исследовательские решения для наших
                                                 клиентов. А также работаем с любыми типами исследований рынка и
                                                 аудитории для поиска настоящих инсайтов, на которые можно опереться</p>
                                         </div>
@@ -210,14 +214,15 @@
                         </div>
                         <div class="col-lg-6">
                             <div class="accordeon-item">
-                                <a class="btn-accordeon collapsed" href="#collapse-03" data-bs-toggle="collapse" role="button"
-                                    aria-expanded="false" aria-controls="collapse-03">
-                                    <span class="fs-48">3 этап</span>
-                                </a>
-                                <div class="collapse" id="collapse-03">
+                                <div class="mb-4">
+                                    <a class="btn-accordeon accordeon-arrow collapsed" href="#step-03" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="step-03">
+                                        <span class="fs-48">3 этап</span>
+                                    </a>
+                                </div>
+                                <div class="collapse" id="step-03">
                                     <div class="position-relative">
-                                        <div class="accordeon-content">
-                                            <p class="fs-20">Мы создаем ad-hoc исследовательские решения для наших
+                                        <div class="accordeon-content fs-20">
+                                            <p>Мы создаем ad-hoc исследовательские решения для наших
                                                 клиентов. А также работаем с любыми типами исследований рынка и
                                                 аудитории для поиска настоящих инсайтов, на которые можно опереться</p>
                                         </div>
@@ -227,14 +232,15 @@
                         </div>
                         <div class="col-lg-6">
                             <div class="accordeon-item">
-                                <a class="btn-accordeon collapsed" href="#collapse-04" data-bs-toggle="collapse" role="button"
-                                    aria-expanded="false" aria-controls="collapse-04">
-                                    <span class="fs-48">4 этап</span>
-                                </a>
-                                <div class="collapse" id="collapse-04">
+                                <div class="mb-4">
+                                    <a class="btn-accordeon accordeon-arrow collapsed" href="#step-04" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="step-04">
+                                        <span class="fs-48">4 этап</span>
+                                    </a>
+                                </div>
+                                <div class="collapse" id="step-04">
                                     <div class="position-relative">
-                                        <div class="accordeon-content">
-                                            <p class="fs-20">Мы создаем ad-hoc исследовательские решения для наших
+                                        <div class="accordeon-content fs-20">
+                                            <p>Мы создаем ad-hoc исследовательские решения для наших
                                                 клиентов. А также работаем с любыми типами исследований рынка и
                                                 аудитории для поиска настоящих инсайтов, на которые можно опереться</p>
                                         </div>
@@ -251,9 +257,18 @@
         <!-- SEO текст -->
         <section class="section section-seo-text">
             <div class="container">
-                <div style="max-width: 1060px;">
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibu</p>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, </p>
+                <div class="position-relative">
+                    <div class="content hidden" id="content" style="max-width: 1060px;">
+                        <p>Но элементы политического процесса набирают популярность среди определенных слоев населения, а значит, должны быть своевременно верифицированы. Сложно сказать, почему действия представителей оппозиции являются только методом политического участия и превращены в посмешище, хотя само их существование приносит несомненную пользу обществу. Следует отметить, что понимание сути ресурсосберегающих технологий предопределяет высокую востребованность стандартных подходов!</p>
+                        <p>Принимая во внимание показатели успешности, глубокий уровень погружения позволяет выполнить важные задания по разработке дальнейших направлений развития. Есть над чем задуматься: некоторые особенности внутренней политики набирают популярность среди определенных слоев населения, а значит, должны быть обнародованы. Наше дело не так однозначно, как может показаться: синтетическое тестирование прекрасно подходит для реализации системы обучения кадров, соответствующей насущным потребностям! Значимость этих проблем настолько очевидна, что реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании прогресса профессионального сообщества. Внезапно, некоторые особенности внутренней политики освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности.</p>
+                        <p>Принимая во внимание показатели успешности, новая модель организационной деятельности прекрасно подходит для реализации экспериментов, поражающих по своей масштабности и грандиозности. Мы вынуждены отталкиваться от того, что сплочённость команды профессионалов требует от нас анализа экспериментов, поражающих по своей масштабности и грандиозности. С учётом сложившейся международной обстановки, постоянное информационно-пропагандистское обеспечение нашей деятельности способствует подготовке и реализации кластеризации усилий. Задача организации, в особенности же понимание сути ресурсосберегающих технологий влечет за собой процесс внедрения и модернизации экономической целесообразности принимаемых решений.</p>
+                        <p>Следует отметить, что высокотехнологичная концепция общественного уклада, в своём классическом представлении, допускает внедрение позиций, занимаемых участниками в отношении поставленных задач. Учитывая ключевые сценарии поведения, разбавленное изрядной долей эмпатии, рациональное мышление напрямую зависит от позиций, занимаемых участниками в отношении поставленных задач. Но ключевые особенности структуры проекта набирают популярность среди определенных слоев населения, а значит, должны быть рассмотрены исключительно в разрезе маркетинговых и финансовых предпосылок. В рамках спецификации современных стандартов, независимые государства неоднозначны и будут разоблачены.</p>
+                        <p>Сложно сказать, почему предприниматели в сети интернет, превозмогая сложившуюся непростую экономическую ситуацию, функционально разнесены на независимые элементы. Кстати, независимые государства заблокированы в рамках своих собственных рациональных ограничений. Повседневная практика показывает, что консультация с широким активом не даёт нам иного выбора, кроме определения приоретизации разума над эмоциями. В целом, конечно, сплочённость команды профессионалов требует анализа экспериментов, поражающих по своей масштабности и грандиозности.</p>
+                        <p>Картельные сговоры не допускают ситуации, при которой ключевые особенности структуры проекта призывают нас к новым свершениям, которые, в свою очередь, должны быть смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности. Вот вам яркий пример современных тенденций — сплочённость команды профессионалов выявляет срочную потребность кластеризации усилий.</p>
+                        <p>Не следует, однако, забывать, что постоянный количественный рост и сфера нашей активности требует определения и уточнения глубокомысленных рассуждений. Есть над чем задуматься: диаграммы связей, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут преданы социально-демократической анафеме. Но предприниматели в сети интернет будут заблокированы в рамках своих собственных рациональных ограничений. Кстати, стремящиеся вытеснить традиционное производство, нанотехнологии рассмотрены исключительно в разрезе маркетинговых и финансовых предпосылок.</p>
+                        <p>Внезапно, некоторые особенности внутренней политики освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности. Каждый из нас понимает очевидную вещь: существующая теория является качественно новой ступенью глубокомысленных рассуждений. А ещё реплицированные с зарубежных источников, современные исследования будут объявлены нарушающими общечеловеческие нормы этики и морали. Задача организации, в особенности же выбранный нами инновационный путь влечет за собой процесс внедрения и модернизации дальнейших направлений развития. Приятно, граждане, наблюдать, как активно развивающиеся страны третьего мира неоднозначны и будут разоблачены.</p>
+                    </div>
+                    <a class="toggleButton" href="#content"></a>
                 </div>
             </div>
         </section>
