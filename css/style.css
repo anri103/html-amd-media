@@ -1907,7 +1907,8 @@ img {
 }
 
 .widget-principles {
-    margin-bottom: 42px;
+    height: 160px;
+    margin-bottom: 72px;
 }
 
 .widget-principles .widget-title {
@@ -1935,6 +1936,11 @@ img {
     .section-principles .section-title > * {
         font-size: 50px;
         letter-spacing: 1px;
+    }
+
+    .widget-principles {
+        height: fit-content;
+        margin-bottom: 42px;
     }
 
     .widget-principles .widget-title {

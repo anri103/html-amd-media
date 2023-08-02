@@ -200,10 +200,12 @@ function toggleContent() {
     }
   }
   
-  const toggleButtons = document.querySelectorAll(".toggleButton");
-  toggleButtons.forEach(button => {
+const toggleButtons = document.querySelectorAll(".toggleButton");
+
+toggleButtons.forEach(button => {
     button.addEventListener("click", toggleContent);
-  });
+});
+
 
 
 
