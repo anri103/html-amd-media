@@ -192,22 +192,23 @@ Fancybox.bind("[data-fancybox]", {
 // [ Show More ]
 
 function toggleContent() {
-    const content = document.getElementsByClassName("content");
-    for (let i = 0; i < content.length; i++) {
-      const currentHeight = content[i].style.maxHeight;
-      content[i].style.maxHeight = currentHeight ? null : content[i].scrollHeight + "px";
-      content[i].classList.toggle("visible");
-    }
+  const content = document.getElementsByClassName("seo-content");
+  for (let i = 0; i < content.length; i++) {
+    const currentHeight = content[i].style.maxHeight;
+    content[i].style.maxHeight = currentHeight ? null : content[i].scrollHeight + "px";
+    
+    content[i].classList.toggle("visible");
+    content[i].classList.toggle("hidden");
   }
   
+  const toggleButton = this;
+  toggleButton.classList.toggle("active");
+}
+
 const toggleButtons = document.querySelectorAll(".toggleButton");
-
 toggleButtons.forEach(button => {
-    button.addEventListener("click", toggleContent);
+  button.addEventListener("click", toggleContent);
 });
-
-
-
 
 //////////////////////////////////////////////////////////////////
 // [ Smooth Scroll ]
