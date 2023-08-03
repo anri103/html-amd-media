@@ -1012,12 +1012,17 @@ img {
     margin-bottom: 46px;
 }
 
+.activities-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
 .activities-card {
     --bs-link-color: #120E1E;
     position: relative;
     display: block;
     height: 100%;
-    padding: 32px;
+    padding: 43px 34px 68px;
     transition: all 0.3s ease;
 }
 
@@ -1025,7 +1030,7 @@ img {
     background: linear-gradient(279.46deg, #FFFFFF -7.93%, rgba(255, 255, 255, 0.52) 62.76%);
 }
 
-.activities-card.last-card:hover {
+.activities-card:last-child:hover {
     background: linear-gradient(276.49deg, #92F2DA -4.2%, rgba(255, 255, 255, 0.52) 90.67%);
 }
 
@@ -1037,6 +1042,7 @@ img {
 }
 
 .activities-card .activities-desc {
+    max-width: 267px;
     font-size: 20px;
     font-weight: 400;
     line-height: normal;
@@ -1046,8 +1052,9 @@ img {
 
 .activities-card .card-arrow {
     position: absolute;
-    bottom: 0;
-    right: 24px;
+    bottom: 28px;
+    right: 21px;
+    background-image: url("data:image/svg+xml,%3Csvg width='21' height='20' viewBox='0 0 21 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M18.8597 0H2.19303C1.19303 0 0.526367 0.666667 0.526367 1.66667C0.526367 2.66667 1.19303 3.33333 2.19303 3.33333H14.8597L1.02637 17.1667C0.359701 17.8333 0.359701 18.8333 1.02637 19.5C1.69303 20.1667 2.69303 20.1667 3.3597 19.5L17.193 5.66667V18.3333C17.193 19.3333 17.8597 20 18.8597 20C19.8597 20 20.5264 19.3333 20.5264 18.3333V1.66667C20.5264 0.666667 19.8597 0 18.8597 0Z' fill='%23120E1E'/%3E%3C/svg%3E%0A");
     transition: transform 0.3s ease;
 }
 
@@ -1099,9 +1106,21 @@ img {
         margin-bottom: 112px;
     }
 
+    .activities-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .activities-card {
+        padding: 43px 48px 93px;
+    }
+
     .activities-card .card-arrow {
-        bottom: 12px;
-        right: 24px;
+        bottom: 49px;
+        right: 33px;
+    }
+
+    .activities-card .activities-desc {
+        max-width: fit-content;
     }
 
     .item-advantage p {
@@ -1596,6 +1615,15 @@ img {
 
     .teamSwiper .swiper-slide {
         height: 400px;
+    }
+
+    .swiper .swiper-scrollbar {
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+    
+    .swiper:hover .swiper-scrollbar {
+        opacity: 1;
     }
 }
 
