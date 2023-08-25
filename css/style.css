@@ -1565,6 +1565,7 @@ img {
     cursor: pointer;
     color: #fff;
     font-size: 24px;
+    opacity: 0.075;
     background-color: #120E1E;
     transition: all 0.3s ease;
 }
@@ -1572,6 +1573,7 @@ img {
 .swiper-next:hover,
 .swiper-prev:hover {
     height: 48px;
+    opacity: 1;
 }
 
 .swiper-next {
@@ -1746,7 +1748,7 @@ img {
 
 .section-uslugi .section-bg-img {
     position: absolute;
-    top: -50px;
+    top: -75px;
     right: -69px;
     z-index: -1;
 }
